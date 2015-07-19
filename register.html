@@ -1,0 +1,199 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>DOTA注册页</title>
+<link href="style/register.css" rel="stylesheet" type="text/css" />
+<!--[if IE]><style>fieldset .content{margin-top:20px;}</style><![endif]-->
+<!--[if IE 6]><style>label.error{position:relative;top:-23px;}</style><![endif]-->
+<script src="js/jquery.js" type="text/javascript"></script>
+<script src="js/jquery.validate.min.js" type="text/javascript"></script>
+<script src="js/jquery.color.js" type="text/javascript"></script>
+<script src="js/area.js" type="text/javascript"></script>
+<script type="text/javascript">
+$(function(){
+	setup();
+	var $optionTitle=$('.optionTitle');
+	var $hidden=$('.hidden');
+	var $optionTable=$('.optionTable')
+	var $option=$optionTable.find('span');
+	$optionTable.hide();
+	$hidden.hide();
+	$optionTitle.click(function(e){
+		e.preventDefault();
+		$(this).toggleClass('optionTitleO');
+		$optionTable.stop().slideToggle('slow');
+	});
+	$option.click(function(e){
+		e.preventDefault();
+		var $this=$(this);
+		$this.toggleClass('o');
+		$hidden.eq($this.index()).slideToggle('slow');
+	});
+	$('h2').hide().show(1000);
+/* 表单验证
+-------------------------------------------------------------*/
+	$('form').validate({
+		rules:{
+			username:{required:true,rangelength:[6,16]},
+			pwd1:{required:true,rangelength:[6,16]},
+			pwd2:{required:true,equalTo:'#pwd1'},
+			email:{required:true,email:true},
+			phone:{digits:true,rangelength:[11,11]},
+			info:{rangelength:[20,256]},
+			personalURL:{url:true}
+			}
+	});
+	$('input:checkbox').change(function(){
+		if( this.checked){
+			$('#send').attr('disabled',false).css('border','1px solid #000');
+		}else{
+			$('#send').attr('disabled',true).css('border','1px solid #ccc');
+		}
+	});//end form validate
+
+function safety(index){//style change
+	$('.change').css({'background-color':'#999'});
+	$('.change').eq(index).css({'background-color':'green'});
+}//end safety style change
+$('#pwd1').bind('keyup',function(){
+	var $this=$(this).val().length;
+	if($this!=''){
+		if($this>=6 && $this<=8){
+			safety(0);
+		}
+		if($this>8 && $this<=12){
+			safety(1);
+			}
+		if($this>12 && $this <=16){
+			safety(2);
+		}
+		if($this<6 || $this>16){
+			$('.change').css({'background-color':'#999'});
+			}//end if
+	}//end if
+	});//end #pwd1 change()
+	$('input:submit').attr('disabled',true);//初始化提交按钮为禁用
+	$('input:reset').click(function(e){//重置按钮事件，用来确认用户是否重置
+		if(!window.confirm('重置表单将会清空所填的字段，是否继续？')){
+			e.preventDefault();
+		}else{
+			$('.change').css({'background-color':'#999'});
+			$('#send').attr('disabled',true);
+		}
+	});//end input reset
+	$('#selectIcon').click(function(e){
+		e.preventDefault();
+		var $icon_content=$('#icon_content');
+		$icon_content=$icon_content.scrollTop()+51;
+		if($icon_content>381){
+			$('#icon_content').animate({scrollTop:0});
+		}else{
+			$('#icon_content').animate({scrollTop:$icon_content});
+		}
+	});//end #selectIcon click
+	$('#truename').keyup(function(e){
+		var url='trueName.php?truename='+$(this).val();
+		if($(this).val().length){
+			jQuery.get(url,function(date){$('#tipsName').text(date);});
+		}else{
+			$('#tipsName').text('');
+		}
+	});
+});//end ready
+</script>
+</head>
+<body>
+<div id="wrapper">
+	<h2>DOTA注册页 DESIGN BY BIWEIMING</h2>
+	<fieldset class="shadow">
+		<legend class="shadow">注册页面</legend>
+		<div class="content">
+			<form method="post" action="result.php" target="_blank">
+				<div>
+					<label for="username" class="title">账号：</label>
+					<input class="text" type="text" name="username" id="username" maxlength="16"/>
+					<span>请填写正确的账号名</span></div>
+				<div>
+					<label for="pwd1"  class="title">密码：</label>
+					<input class="text" type="password" name="pwd1" id="pwd1" maxlength="16"/>
+					<span>请填写正确的密码</span></div>
+				<div class="safety"><span>安全级别：</span><span class="change">低</span><span class="change">中</span><span class="change">高</span></div>
+				<div>
+					<label for="pwd2"  class="title">确认密码：</label>
+					<input class="text" type="password" name="pwd2" id="pwd2" maxlength="16"/>
+					<span>请再次键入正确的密码</span></div>
+				<div>
+					<label for="email"   class="title">电子邮件：</label>
+					<input class="text" type="text" name="email" id="email" maxlength="26"/>
+					<span>请键入正确的电子邮件地址</span></div>
+				<div><a href="#" class="optionTitle" title="完善您的个人资料">选填 <span>（如果想进一步完善资料，请点击这里。）</span></a></div>
+				<div class="optionTable shadow"> <span>真实姓名</span><span>性别</span><span>年龄</span><span>出生日期</span><span>所在地</span><span>手机号码</span><span>个人主页</span><span>头像</span><span>简介</span> </div>
+				<div class="hidden">
+					<label for="truename"  class="title">真实姓名：</label>
+					<input class="text" type="text" name="truename" id="truename"  maxlength="26"/>
+					<span id="tipsName"></span></div>
+				<div id="sex" class="hidden">
+					<label class="title">性别：</label>
+					<label><span>
+						<input type="radio" name="sex" value="0" checked />
+						男</span></label>
+					<label><span>
+						<input type="radio" name="sex"  value="1" />
+						女</span></label>
+				</div>
+				<div class="hidden">
+					<label for="age"  class="title">年龄：</label>
+					<select id="age" name="age">
+						<option selected disabled>选择年龄</option>
+						<script type="text/javascript">
+						for(var i=10;i<=90;i++){
+							document.write('<option value="'+i+'">'+i+'岁</option>');
+						}
+					</script>
+					</select>
+				</div>
+				<div class="hidden">
+					<label for="birthday"  class="title">出生日期：</label>
+					<input type="date" name="birthday" id="birthday"  value="1992-01-01" />
+				</div>
+                        <div class="hidden">
+                        	<label for="area" class="title">所在地：</label>
+                              <select id="province" runat="server" name="province"></select>
+   					 <select id="city" runat="server" name="city"></select>
+  					  <select id="county" runat="server" name="city"></select>
+                        </div>
+				<div class="hidden">
+					<label for="phone"  class="title">手机号码：</label>
+					<input class="text" type="text" name="phone" id="phone"/>
+				</div>
+				<div class="hidden">
+					<label for="personalURL"  class="title">个人主页：</label>
+					<input class="text" type="text" name="personalURL" id="personalURL" />
+				</div>
+				<div style="overflow:hidden;zoom:1;" class="hidden">
+					<label class="title">头像：</label>
+					<div id="icon_content"> <img src="images/form/icon1.jpg" alt="全能骑士头像"/> <img src="images/form/icon2.jpg" alt="水晶室女头像"/> <img src="images/form/icon3.jpg" alt="敌法师头像"/> <img src="images/form/icon4.jpg" alt="黑暗游侠头像"/> <img src="images/form/icon5.jpg" alt="海军上将头像"/> <img src="images/form/icon6.jpg" alt="火女头像"/> <img src="images/form/icon7.jpg" alt="召唤师头像"/> <img src="images/form/icon8.jpg" alt="风行者头像"/> </div>
+					<a href="#" id="selectIcon"><span>点击切换头像</span></a></div>
+				<div class="hidden">
+					<label for="info"  class="title">简介：</label>
+					<textarea name="info" id="info"></textarea>
+				</div>
+				<div id="agreement">
+					<p>
+						<label>
+							<input type="checkbox" name="agreement" value="1" />
+							我已查看并同意</label>
+						<a href="#">《DOTA游戏用户协议》</a></p>
+				</div>
+				<div class="button">
+					<input type="submit" value="提交注册" id="send" name="send"/>
+					<input type="reset" value="重置表单" />
+				</div>
+			</form>
+		</div>
+	</fieldset>
+</div>
+<div class="copyright">copyright &copy; 2013 by Biweiming all  rights reserved</div>
+</body>
+</html>

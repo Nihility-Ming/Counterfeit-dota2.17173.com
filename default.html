@@ -1,0 +1,768 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="keywords" content="dota2,刀塔2,dota2官网,dota2视频,dota2国服官网,dota2比赛视频,dota2英雄,dota2饰品,dota2国服饰品交易,dota2战队,dota2英雄出装">
+<meta name="description" content="DOTA2官网-17173DOTA2专题站,为广大的DOTA2玩家提供最新的DOTA2资讯,DOTA2英雄出装表,DOTA2英雄出装策略,DOTA2比赛直播,DOTA2官网下载,搜索全球最优秀的DOTA2攻略，挑选精彩的DOTA2视频及录像，报道最为火爆的DOTA2比赛">
+<title>DOTA2官网_17173合作专区</title>
+<link type="text/css" href="style/global.css" rel="stylesheet" />
+<link type="text/css" href="style/default.css" rel="stylesheet" />
+<!--[if IE 6]><link type="text/css" href="style/ie6.style.css" rel="stylesheet" /><![endif]-->
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery.easing.js"></script>
+<script type="text/javascript" src="js/javascript.showandhidden.js"></script>
+<script type="text/javascript" src="js/jquery.tagPage.js"></script>
+<script type="text/javascript" src="js/jquery.scrollLevel.js"></script>
+<script type="text/javascript" src="js/jquery.inputPrompt.js"></script>
+<script type="text/javascript" src="js/jquery.scrollTop.js"></script>
+<script type="text/javascript" src="js/hero.js"></script>
+<script type="text/javascript" src="js/jquery.zoomIn.js"></script>
+<script type="text/javascript">
+$(function(){
+/* topNav all guide show an hidden */
+showAndHidden('allGuide','allGuideCon');
+/* set (div.list-news-and-hot ul li)  interval five bottom line */
+function CSS_ListNewsAndHotUlLi(index){
+	$('div.list-news-and-hot ul li:eq('+index+')').css({'border-bottom':'dotted 1px #B5A689','padding-bottom':'5px','margin-bottom':'5px'});
+}
+CSS_ListNewsAndHotUlLi(4);
+CSS_ListNewsAndHotUlLi(9);
+CSS_ListNewsAndHotUlLi(14);
+CSS_ListNewsAndHotUlLi(24);
+CSS_ListNewsAndHotUlLi(29);
+CSS_ListNewsAndHotUlLi(34);
+
+/* set (.items .item ul li) interval five bottom line */
+$('.items li').each(function(){
+	var $this=$(this);
+	if($this.index()==4){
+		$this.css({'border-bottom':'dotted 1px #B5A689','padding-bottom':'5px','margin-bottom':'5px'});
+	}
+});//end .items li each
+/* Execute Custom jQuery Plugin (inputPrompt) */
+jQuery.inputPrompt('.search-box-input','#999','#000');
+jQuery.inputPrompt('.search-box-bottom input:first','#999','#000');
+/* Execute Custom jQuery Plugin (tagPage) */
+jQuery.tagPage('.list-news-and-hot .tit a.item','.list-news-and-hot ul','titCurrent');
+jQuery.tagPage('.cover-tit a','.cover-show a','current',3500);
+jQuery.tagPage('.video-list-type a','ul.video-list-con','current');
+jQuery.tagPage('.video-img-tit:eq(0) a','.video-img-list:eq(0) ul','current');
+jQuery.tagPage('.video-img-tit:eq(1) a','.video-img-list:eq(1) ul','current');
+jQuery.tagPage('.competeTable div .tit','.competeTable table','current');
+/* Execute Custom jQuery Plugin (scrollLevel) */
+jQuery.scrollLevel('#playerNews .ct','#playerNews .prev','#playerNews .next',4,'easeOutElastic');
+jQuery.scrollLevel('div.teams-stage','a.teams-prev','a.teams-next',2,'easeOutExpo');
+/* Execute Custom jQuery Plugin (scrollTop) */
+jQuery.scrollTop(false,false,'easeInOutElastic',1000);
+/* show hero list */
+hero();
+/* zoom in photo effect */
+jQuery.zoomIn('#heroList img',256);//initialize zoom in images effect
+$('.hero-tag a').click(function(){// restart load zoom in photo effect
+	$('#zoomIn').remove();
+	jQuery.zoomIn('#heroList img',256);
+});//end hero-tag <a> click
+/* cancel not register.html anchor click event */
+$('a:not(".ct .right a:eq(1)")').click(function(e){e.preventDefault();});
+});//end ready
+</script>
+</head>
+<body>
+<div class="topNav">
+	<div class="ct">
+		<div class="left fl">
+			<a href="#" class="home">17173首页</a>
+			<div id="allGuide">
+			<a href="#" class="allGuide">全站导航</a>
+				<div id="allGuideCon">
+					<table class="allGuideTable" cellspacing="0">
+						<tr>
+							<td style="width:122px;height:141px;">
+								<h3><a href="#" style="color:#1c6ec5">新闻</a></h3>
+								<a href="#">产业</a>&nbsp;&nbsp;&nbsp;<a href="#">全球</a>&nbsp;&nbsp;&nbsp;<a href="#">大陆 </a><br /><a href="#">图片</a>&nbsp;&nbsp;&nbsp;<a href="#">话题</a>&nbsp;&nbsp;&nbsp;<a href="#">大观</a>
+								<h3><a href="#"  style="color:#1c6ec5">新网游</a></h3>
+								<a href="#">测试表</a>&nbsp;<a href="#">激活码</a>&nbsp;<a href="#">评测</a>&nbsp;<br /><a href="#">期待榜</a>&nbsp;<a href="#">厂商黄页</a>&nbsp;
+							</td>
+							<td style="width:124px">
+								<h3><a href="#"  style="color:#626262">热门游戏</a></h3>
+								<a href="#">魔兽世界</a>&nbsp;&nbsp;<a href="#">DNF</a>&nbsp;&nbsp;<br />
+								<a href="#">梦幻西游</a>&nbsp;&nbsp;<a href="#">英雄联盟</a>&nbsp;&nbsp;<br />
+								<a href="#">斗战神</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">天龙八部</a>&nbsp;&nbsp;<br />
+								<a href="#">QQ飞车</a>&nbsp;&nbsp;&nbsp;<a href="#">远征OL</a>&nbsp;&nbsp;<br />
+								<a href="#">剑网3</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">找游戏&gt;&gt;</a>&nbsp;&nbsp;<br />
+							</td>
+							<td style="width:97px">
+								<h3><a href="#" style="color:#b53939">游戏视频</a></h3>
+								<a href="#">新游视频</a>&nbsp;&nbsp;<a href="#">单机</a><br />
+								<a href="#">播客</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">魔兽</a><br />
+								<a href="#">DNF</a>&nbsp;&nbsp;<a href="#">天龙八部</a><br />
+								<a href="#">征途2</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">LOL</a><br />
+								<a href="#">专题</a>
+							</td>
+							<td style="width:97px">
+								<h3><a href="#"  style="color:#3fa252">互动中心</a></h3>
+								<a href="#">玩家中心</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">论坛</a><br />
+								<a href="#">商城</a>&nbsp;&nbsp;<a href="#">发号</a>&nbsp;&nbsp;<a href="#">百科</a><br />
+								<a href="#">活动</a>&nbsp;&nbsp;<a href="#">公会</a>&nbsp;&nbsp;<a href="#">DKP</a><br />
+								<a href="#">读书</a>&nbsp;&nbsp;<a href="#">博客</a>&nbsp;&nbsp;<a href="#">微博</a><br />
+								<a href="#">邮箱</a>
+							</td>
+							<td>
+							<a href="#">网络游戏</a><br />
+							<a href="#">网页游戏</a><br />
+							<a href="#">flash小游戏</a><br />
+							<a href="#">iPhone/iPad</a><br />
+							<a href="#">电竞</a>&nbsp;&nbsp;<a href="#">单机</a><br />
+							<a href="#">上去玩玩</a>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="5">
+								<div class="fl" style="padding-left:35px"><a href="#">17173游戏神灯</a>：<br />
+<a href="#">LOL</a> / <a href="#">DNF</a> / <a href="#">梦幻</a> / <a href="#">CF</a></div>
+								<div class="fl" style="padding-left:117px"><a href="#">游戏数据库</a><br />
+<a href="#">WOW</a> / <a href="#">DNF</a> / <a href="#">LOL</a> / <a href="#">鹿鼎记</a></div>
+								<div class="fr" style="padding-right:23px"><a href="#">游戏下载</a><br />
+<a href="#">帮助中心</a></div>
+							</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		<a href="#" class="message">玩家回忆录：DOTA6.78的光辉时光</a> <a href="#" class="app">手机客户端</a> </div>
+		<div class="right fr" style="border-right:1px solid #fff"> <a href="#" class="login">登录</a><a href="register.html" target="_blank">注册</a> </div>
+	</div>
+</div>
+<div class="wrapper">
+	<div class="header ct990">
+		<div class="nav-index fl"> <a href="#" class="index">首页</a> <a href="#" class="setIndex" title="设为主页">设为主页</a> <a href="#" class="setIndex" title="收藏主站">收藏主站</a> </div>
+		<div class="nav-main fl">
+			<ul class="nav-website clearFloat">
+				<li><a href="#" id="current">视频站</a></li>
+				<li><a href="#">攻略站</a></li>
+				<li><a href="#">赛事站</a></li>
+				<li><a href="#">图片站</a></li>
+				<li><a href="#" style="margin-right:0px;">数据库</a></li>
+			</ul>
+			<div class="subNav clearFloat">
+				<div class="fl white"> <span>热点资讯</span> <a href="#">DOTA2公测</a> | <a href="#">国服饰品交易</a> | <a href="#">DOTA2官网</a><br/>
+					<a href="#" class="yellowStrong">Dota2加好友</a> | <a href="#" class="yellowStrong">Dota2改名</a> | <a href="#">战队排名</a><br />
+					<a href="#" class="yellowStrong">DOTA2饰品兑换</a> | <a href="#">ACE联赛</a> | <a href="#">WPC直播</a> </div>
+				<div class="fl  white"> <span>精彩视频</span> <a href="#">DOTA2集锦</a> | <a href="#">比赛视频</a> | <a href="#">海涛DOTA2视频</a><br/>
+					<a href="#">战队视频</a> | <a href="#">DOTA2蛋疼集锦</a> | <a href="#">DOTA2搞笑</a><br />
+					<a href="#">DOTA2教学视频</a> | <a href="#">老党视频</a> | <a href="#">WPC直播</a> </div>
+				<div class="fl  white" style="margin-right:0px;"> <span>教程攻略</span> <a href="#">DOTA2安装</a> | <a href="#">新手教程</a> | <a href="#">DOTA2饰品交易</a><br />
+					<a href="#">DOTA2交易</a> | <a href="#">战友招募</a> | <a href="#">DOTA2菠菜</a><br />
+					<a href="#">DOTA2战队</a> | <a href="#">极品装备</a> | <a href="#">DOTA2问答</a></div>
+			</div>
+		</div>
+		<div class="nav-right fr"> <a href="#" class="gameDown">游戏下载</a> <a href="#" class="enterBBS">进入论坛</a> </div>
+		<br style="clear:both" />
+		<div class="news white">
+			<div style="background-color:black;padding:3px;margin-right:20px;" class="fl"><a href="#"><img src="images/default/wpc.jpg" alt="wpc" title="wpc" />
+				<p style="text-align:center;">WPC-ACE DOTA2联赛</p>
+				</a></div>
+		  <div class="competeTable fl">
+                  	<div style="margin-bottom:12px"><span class="witch fr">观看直播：<a href="#" class="ace">ACE直播</a></span><strong style="margin-right:15px">赛程表</strong><span class="competeNav"><a href="#" class="tit current">17</a><a href="#" class="tit">20</a><a href="#" class="tit">21</a><a href="#" class="tit">22</a></span></div>
+                        <table style="width:100%">
+                        	<tr>
+                              	<td class="t-icon"></td><td style="color:#922626;width:45px;">NISM </td><td style="color:#922626;width:45px;">13:00</td><td style="width:55px;text-align:right;">DK</td><td style="width:80px;text-align:center;"><img src="images/default/cn.gif" />VS<img src="images/default/rs.gif" /></td><td>Alliance</td><td style="width:70px;text-align:right;padding-right:5px;"><a href="#" style="color:#ff9459">NISM直播</a></td>
+                              </tr>
+                              <tr>
+                              	<td class="t-icon"></td><td style="color:#922626;width:45px;">WPC</td><td style="color:#922626;width:45px;">16:00</td><td style="width:55px;text-align:right;">WPC.A</td><td style="width:80px;text-align:center;"><img src="images/default/cn.gif" />VS<img src="images/default/cn.gif" /></td><td>LGD.int</td><td style="width:70px;text-align:right;padding-right:5px;"><a href="#" style="color:#ff9459">WPC直播</a></td>
+                              </tr>
+                              <tr>
+                              	<td class="t-icon"></td><td style="color:#922626;width:45px;">WPC</td><td style="color:#922626;width:45px;">19:00</td><td style="width:55px;text-align:right;">Tongfu</td><td style="width:80px;text-align:center;"><img src="images/default/cn.gif" />VS<img src="images/default/cn.gif" /></td><td>Rsnake</td><td style="width:70px;text-align:right;padding-right:5px;"><a href="#" style="color:#ff9459">NISM直播</a></td>
+                              </tr>
+                        </table>
+                        <table style="width:100%">
+                        	<tr>
+                              	<td class="t-icon"></td><td style="color:#922626;width:45px;">WPC</td><td style="color:#922626;width:45px;">16:00</td><td style="width:55px;text-align:right;">DK</td><td style="width:80px;text-align:center;"><img src="images/default/cn.gif" />VS<img src="images/default/cn.gif" /></td><td>LGD.int</td><td style="width:70px;text-align:right;padding-right:5px;"><a href="#" style="color:#ff9459">NISM直播</a></td>
+                              </tr>
+                              <tr>
+                              	<td class="t-icon"></td><td style="color:#922626;width:45px;">WPC</td><td style="color:#922626;width:45px;">19:00</td><td style="width:55px;text-align:right;">WPC.A</td><td style="width:80px;text-align:center;"><img src="images/default/cn.gif" />VS<img src="images/default/cn.gif" /></td><td>LGD.int</td><td style="width:70px;text-align:right;padding-right:5px;"><a href="#" style="color:#ff9459">WPC直播</a></td>
+                              </tr>
+                        </table>
+                        <table style="width:100%">
+                        	<tr>
+                              	<td class="t-icon"></td><td style="color:#922626;width:45px;">NISM </td><td style="color:#922626;width:45px;">16:00</td><td style="width:55px;text-align:right;">LGD.cn</td><td style="width:80px;text-align:center;"><img src="images/default/cn.gif" />VS<img src="images/default/cn.gif" /></td><td>Rsnake</td><td style="width:70px;text-align:right;padding-right:5px;"><a href="#" style="color:#ff9459">NISM直播</a></td>
+                          </tr>
+                              <tr>
+                              	<td class="t-icon"></td><td style="color:#922626;width:45px;">WPC</td>
+                              	<td style="color:#922626;width:45px;">19:00</td>
+                              	<td style="width:55px;text-align:right;">iG</td><td style="width:80px;text-align:center;"><img src="images/default/cn.gif" />VS<img src="images/default/cn.gif" /></td><td>Rstars</td><td style="width:70px;text-align:right;padding-right:5px;"><a href="#" style="color:#ff9459">WPC直播</a></td>
+                              </tr>
+                    </table>
+                    <table style="width:100%">
+                       	  <tr>
+                             	  <td class="t-icon"></td><td style="color:#922626;width:45px;">NISM </td><td style="color:#922626;width:45px;">13:00</td><td style="width:55px;text-align:right;">Tongfu</td><td style="width:80px;text-align:center;"><img src="images/default/cn.gif" />VS<img src="images/default/cn.gif" /></td><td>HGT</td><td style="width:70px;text-align:right;padding-right:5px;"><a href="#" style="color:#ff9459">NISM直播</a></td>
+                      </tr>
+                          <tr>
+                             	  <td class="t-icon"></td><td style="color:#922626;width:45px;">WPC</td><td style="color:#922626;width:45px;">16:00</td><td style="width:55px;text-align:right;">VG</td><td style="width:80px;text-align:center;"><img src="images/default/cn.gif" />VS<img src="images/default/cn.gif" /></td><td>LGD.int</td><td style="width:70px;text-align:right;padding-right:5px;"><a href="#" style="color:#ff9459">WPC直播</a></td>
+                          </tr>
+                </table>
+                </div>
+			<span class="competeTable fl"></span>
+			<div class="fr clearFloat" id="playerNews"> <a href="#" class="prev" title="上一张">上一张</a> <a href="#" class="next" title="下一张">下一张</a>
+				<div class="ct">
+					<div class="clearFloat">
+						<div class="ct_item"><a href="#"><img src="images/default/scrollLeft/1.jpg" alt="G1冠军联赛" title="G1冠军联赛"/><p>G1冠军联赛</p></a></div>
+						<div class="ct_item"><a href="#"><img src="images/default/scrollLeft/2.jpg" alt="第三届DOTA2国际邀请赛" title="第三届DOTA2国际邀请赛"/><p>第三届DOTA2国际邀请赛</p></a></div>
+						<div class="ct_item"><a href="#"><img src="images/default/scrollLeft/3.jpg" alt="ECL2013电子竞技冠军联赛" title="ECL2013电子竞技冠军联赛"/><p>ECL2013电子竞技冠军联赛</p></a></div>
+						<div class="ct_item"><a href="#"><img src="images/default/scrollLeft/4.jpg" alt="DOTA2超级联赛" title="DOTA2超级联赛"/><p>DOTA2超级联赛</p></a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="main ct990">
+		<div class="ct clearFloat">
+			<div class="left fl">
+				<div class="conNews">
+					<p style="margin-bottom:10px"><span class="cover">头条</span><a href="#" class="red font14px_bold">WPC-ACE DPTA2联赛第五周结速 推荐节奏引领潮流</a><br />
+						<a href="#">[ACE联赛直播]</a> <a href="#">[ACE赛程]</a> <a href="#">[ACE奖金]</a> <a href="#" class="blue">[WPC-ACE官网]</a></p>
+					<p><a href="#" class="red font14px_bold">DOTA2更新改动日记 屠夫复仇之魂跳到秀</a><br />
+						<a href="#">[D2L邀请赛专题]</a> <a href="#">[D2L风云直播]</a> <a href="#">[D2L LongDD YY直播]</a> <a href="#">[D2L赛程]</a></p>
+				</div>
+				<div class="list-news-and-hot">
+					<div class="tit trueWhite"><a href="#" style="float:right">更多&gt;&gt;</a><a href="#" class="item titCurrent" id="shape">DOTA2资讯</a><a href="#" class="item" style="left:105px">刀塔2热点</a></div>
+					<ul class="black font14px">
+						<li><span>11-05</span><a href="#">3点直播D2L邀请赛东部赛区Tongfu对阵Rstars</a></li>
+						<li><span>11-05</span><a href="#"  class="red">DOTA2新手成神之路 冥界亚龙打法攻略心得</a></li>
+						<li><span>11-05</span><a href="#">D2L邀请赛东部赛区LGD.int 2:0轻取Rsnake</a></li>
+						<li><span>11-05</span><a href="#">DOTA2新手成神之路 剃刀中单及主力攻略心得</a></li>
+						<li><span>11-05</span><a href="#">DOTA2机械舞者 地精修补匠新手向攻略心得</a></li>
+						<li><span>11-04</span><a href="#">官方公告：11月4日无法连接至DOTA2网络故障</a></li>
+						<li><span>11-04</span><a href="#">韩国NISM邀请赛：Dig胜Speed 韩国2战全败</a></li>
+						<li><span>11-04</span><a href="#">晚8点HOG主力妹子桃之夭夭直播DOTA2第一视角</a></li>
+						<li><span>11-04</span><a href="#"  class="red">晚上6点直播韩国NISM第二周DOTA2邀请赛</a></li>
+						<li><span>11-04</span><a href="#">赛睿DLA联赛HGT顶替Mineski今晚7点半上演首战</a></li>
+						<li><span>11-03</span><a href="#">KK出品：DOTA2 6.79版本暗影萨满万字攻略</a></li>
+						<li><span>11-03</span><a href="#">关于DOTA2服务器崩溃原因：完美该不该背锅</a></li>
+						<li><span>11-03</span><a href="#">DOTA2幽鬼新手攻略心得：在我面前都无所遁形</a></li>
+						<li><span>11-03</span><a href="#">D2L邀请赛东部赛区VG 2:0击败DK复仇成功</a></li>
+						<li><span>11-03</span><a href="#">易乐游杯DOTA2-AMD完美电竞大赛武汉站亮点纷呈</a></li>
+						<li><span>11-02</span><a href="#">D2L邀请赛东部赛区VG 2:1艰难击败Rstars</a></li>
+						<li><span>11-02</span><a href="#">痛苦女王DOTA2 6.79攻略：在女王下尖叫吧</a></li>
+						<li><span>11-02</span><a href="#"  class="red">DOTA2 6.79版本熊猫酒仙攻略：请叫我国宝</a></li>
+						<li><span>11-02</span><a href="#">职业圈再爆绯闻：LGD.DD奶子D事件完整详情</a></li>
+						<li><span>11-02</span><a href="#" class="red">D2L邀请赛东部赛区VG 2:0击败DK复仇成功</a></li>
+					</ul>
+					<ul class="black font14px">
+						<li><span>11-05</span><a href="#"  class="red">战个痛！第二届新浪超新星刀塔公开赛全面报名</a></li>
+						<li><span>11-05</span><a href="#">WPC-ACE第七周比赛前瞻：积分榜次席之争</a></li>
+						<li><span>11-05</span><a href="#">WPC第六周盘点：DK iG两队争冠？诸强不答应</a></li>
+						<li><span>11-05</span><a href="#">《倒不了的塔》女王登场 DOTA2喷血图集典藏</a></li>
+						<li><span>11-05</span><a href="#">VG化身复仇者联盟 国内DOTA2格局初现端倪</a></li>
+						<li><span>11-04</span><a href="#">G联赛DOTA2欧美区八强出炉 A队领衔光棍节之战</a></li>
+						<li><span>11-04</span><a href="#"  class="red">Rstars战队经理微博爆料Sylar转会VG战队内幕</a></li>
+						<li><span>11-04</span><a href="#">DOTA2干扰者攻略：静态风暴中的团战能手</a></li>
+						<li><span>11-04</span><a href="#">点金冰女大行其道 盘点DOTA2 6.79版本最火英雄</a></li>
+						<li><span>11-04</span><a href="#">DOTA2对线经验心得：给新玩家一个好的开始</a></li>
+						<li><span>11-03</span><a href="#"  class="red">DOTA2 6.79新的王者：赏金猎人使用心得攻略</a></li>
+						<li><span>11-03</span><a href="#">Dota2万圣节活动福利到来：最新模式和活动说明</a></li>
+						<li><span>11-03</span><a href="#">专访Black：新版本适合推进和大家 ACE后回欧洲</a></li>
+						<li><span>11-03</span><a href="#">教授出品：盘点6.79版本最适合刷新A杖TOP10</a></li>
+						<li><span>11-03</span><a href="#">DOTA2 6.79英雄排行榜：屠夫领跑 巫妖登顶</a></li>
+						<li><span>11-02</span><a href="#"  class="red">DOTA2韩国能否崛起？邀请中国强队只为练兵</a></li>
+						<li><span>11-02</span><a href="#">NISM邀请赛赛程公布：DK【A】队第三周登场</a></li>
+						<li><span>11-02</span><a href="#">DOTA2官方版主：关于国服饰品掉落几率问题</a></li>
+						<li><span>11-02</span><a href="#">WPC-ACE比赛预告：DK遇劲敌 VG大战国际爹</a></li>
+						<li><span>11-02</span><a href="#" class="red">WPC第五周前瞻：DK遭遇劲敌 诸强陷入混战</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="right fr clearFloat">
+				<div class="converPlayer">
+					<div class="cover-tit"> <a href="#" class="current">G联赛英雄专属套装预览</a> <a href="#">DOTA2 6.79版本更新改动日记</a> <a href="#">DOTA2暗夜魔王动态表情</a> <a href="#">《倒不了的塔》第七集</a> </div>
+					<div class="cover-show">
+						<a href="#"><img src="images/default/coverPlayer/1.jpg" alt="G联赛英雄专属套装预览"/></a>
+						<a href="#"><img src="images/default/coverPlayer/2.jpg" alt="DOTA2 6.79版本更新改动日记"/></a>
+						<a href="#"><img src="images/default/coverPlayer/3.jpg" alt="DOTA2暗夜魔王动态表情"/></a>
+						<a href="#"><img src="images/default/coverPlayer/4.jpg" alt="《倒不了的塔》第七集"/></a>
+					</div>
+				</div>
+				<div class="theme clearFloat">
+					<div class="live fl">
+						<h3 class="black font14px_bold"><a href="#">DOTA2比赛直播专题</a></h3>
+						<ul class="themeImg">
+							<li><a href="#"><img src="images/default/D2L.jpg" alt="D2L邀请赛" /></a><a href="#" class="ta">D2L邀请赛</a></li>
+							<li><a href="#"><img src="images/default/WPCzt.jpg" alt="WPC-ACE DOTA2联赛" /></a><a href="#" class="ta">WPC-ACE DOTA2联赛</a></li>
+							<li><a href="#"><img src="images/default/wbls.jpg" alt="DOTA2全国网吧超级联赛" /></a><a href="#" class="ta">DOTA2全国网吧超级联赛</a></li>
+						</ul>
+					</div>
+					<div class="helper fr">
+						<div class="helper-search-box">
+							<form>
+								<input class="search-box-input" type="text" name="keyword" data-placeholder="请输入关键字" />
+								<input name="submit" type="submit" value="搜索" class="search-box-btn">
+							</form>
+						</div>
+						<h2 class="dota2-Icon-Bg1">DOTA2新手入门</h2>
+						<div class="helper-bd">
+							<p><a href="#">控制台</a><a href="#">法球效果</a><a href="#">硬件配置</a><a href="#">DOTA2信使</a></p>
+							<p><a href="#">新手推荐</a><a href="#">GANK抓人</a><a href="#">神符介绍</a><a href="#">分路定位</a></p>
+							<p><a href="#">轨迹之雾</a><a href="#">出装推荐</a><a href="#">兵线知识</a><a href="#">对线心得</a></p>
+							<p><a href="#">小地图</a><a href="#">区别DotA</a><a href="#" class="red">常见问题</a><a href="#">DOTA2问答</a></p>
+						</div>
+						<h2 class="dota2-Icon-Bg1">DOTA2高手进阶</h2>
+						<div class="helper-bd">
+							<p><a href="#">资源分配</a><a href="#">眼位研究</a><a href="#">排眼心得</a><a href="#">逃生技巧</a></p>
+							<p><a href="#">GANK反杀</a><a href="#">吸血对比</a><a href="#">诀窍整理</a><a href="#">伤害类型</a></p>
+							<p><a href="#">攻击施法</a><a href="#">命令介绍</a><a href="#">常用术语</a><a href="#">界面说明</a></p>
+							<p><a href="#">细节研究</a><a href="#">英雄组合</a><a href="#">打野攻略</a><a href="#">DOTA2问答</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<br style="clear:both" />
+			<div class="column clearBoth clearFloat">
+				<h2 class="cool"><a href="#">进入视频站</a><span>DOTA2视频</span></h2>
+				<div class="video-img fl">
+					<div class="video-img-tit clearFloat"> <a href="#" class="current">最新视频</a><a href="#">精彩视频</a><a href="#">解说视频</a><a href="#">比赛视频</a> </div>
+					<div class="video-img-list clearFloat radius">
+						<ul class="clearFloat">
+							<li><a href="#"><img src="images/default/video/1.jpg" /></a><p><a href="#">DOTA2比赛视频：NSL联赛 UR vs MVP #2</a></p></li>
+							<li><a href="#"><img src="images/default/video/2.jpg" /></a><p><a href="#">ACE联赛 常规赛第十二轮 RStars vs LGD.cn</a></p></li>
+							<li><a href="#"><img src="images/default/video/3.jpg" /></a><p><a href="#">DOTA2视频：CDEC WatT 散人 VS DNZ</a></p></li>
+							<li><a href="#"><img src="images/default/video/4.jpg" /></a><p><a href="#">DOTA2视频：CDEC WatT 小飞机 VS 4KINGS</a></p></li>
+							<li><a href="#"><img src="images/default/video/5.jpg" /></a><p><a href="#">DOTA2视频：CDEC WatT CH_NS VS 散人</a></p></li>
+							<li><a href="#"><img src="images/default/video/6.jpg" /></a><p><a href="#">单车DOTA2视频逗b武士玩游戏8：剑圣jugg</a></p></li>
+						</ul>
+						<ul class="clearFloat">
+							<li><a href="#"><img src="images/default/video/7.jpg" /></a><p><a href="#">DOTA2视频：路人团战精彩操作集锦第29期</a></p></li>
+							<li><a href="#"><img src="images/default/video/8.jpg" /></a><p><a href="#">老跳出品：百度DOTA2吧蛋疼集锦VOL.5</a></p></li>
+							<li><a href="#"><img src="images/default/video/9.jpg" /></a><p><a href="#">DOTA2视频：精彩路人集锦先发制人第三弹</a></p></li>
+							<li><a href="#"><img src="images/default/video/10.jpg" /></a><p><a href="#">DOTA2创意工坊每周TOP5佳品展示第69期</a></p></li>
+							<li><a href="#"><img src="images/default/video/11.jpg" /></a><p><a href="#">DOTA2视频创意工坊Don Don作品：孙悟空</a></p></li>
+							<li><a href="#"><img src="images/default/video/12.jpg" /></a><p><a href="#">DOTA2视频：欢乐蛋疼搞笑镜头合集第九弹</a></p></li>
+						</ul>
+						<ul class="clearFloat">
+							<li><a href="#"><img src="images/default/video/13.jpg" /></a><p><a href="#">KENT解说 NISM 第二轮 Dignitas vs MVP</a></p></li>
+							<li><a href="#"><img src="images/default/video/14.jpg" /></a><p><a href="#">KENT解说 NISM 第二轮 Dignitas vs Speed</a></p></li>
+							<li><a href="#"><img src="images/default/video/15.jpg" /></a><p><a href="#">WPC-ACE联赛 常规赛第十三轮 IG vs RSnake</a></p></li>
+							<li><a href="#"><img src="images/default/video/16.jpg" /></a><p><a href="#">ACE联赛 常规赛第十三轮 LGD.cn vs WPCA</a></p></li>
+							<li><a href="#"><img src="images/default/video/17.jpg" /></a><p><a href="#">小强DOTA2学堂：最近大热辅助水晶室女</a></p></li>
+							<li><a href="#"><img src="images/default/video/18.jpg" /></a><p><a href="#">DOTA2视频：CDEC WatT 散人 VS DNZ</a></p></li>
+						</ul>
+						<ul class="clearFloat">
+							<li><a href="#"><img src="images/default/video/19.jpg" /></a><p><a href="#">DOTA2比赛视频：NSL联赛 UR vs MVP #2</a></p></li>
+							<li><a href="#"><img src="images/default/video/20.jpg" /></a><p><a href="#">ACE联赛 常规赛第十二轮 RStars vs LGD.cn</a></p></li>
+							<li><a href="#"><img src="images/default/video/21.jpg" /></a><p><a href="#">DOTA2视频：CDEC WatT 散人 VS DNZ</a></p></li>
+							<li><a href="#"><img src="images/default/video/22.jpg" /></a><p><a href="#">WPC-ACE联赛 常规赛第十三轮 IG vs RSnake</a></p></li>
+							<li><a href="#"><img src="images/default/video/23.jpg" /></a><p><a href="#">DOTA2视频：CDEC WatT CH_NS VS 散人</a></p></li>
+							<li><a href="#"><img src="images/default/video/24.jpg" /></a><p><a href="#">DOTA2比赛视频：NSL联赛 UR vs MVP #2</a></p></li>
+						</ul>
+					</div>
+				</div>
+				<div class="video-column fl">
+					<h3>视频专栏</h3>
+					<ul>
+						<li><a href="#">G1冠军联赛</a></li>
+						<li><a href="#">TI3邀请赛</a></li>
+						<li><a href="#">DSL超级联赛</a></li>
+						<li><a href="#">流言终结者</a></li>
+						<li><a href="#">蛋疼集锦</a></li>
+						<li><a href="#">搞笑视频</a></li>
+						<li><a href="#">Kent</a></li>
+						<li><a href="#">老党</a></li>
+						<li><a href="#">南嗣羽</a></li>
+						<li><a href="#">西瓦幽鬼</a></li>
+					</ul>
+				</div>
+				<div class="video-list fr">
+					<h3>视频排行榜</h3>
+					<div class="video-list-type clearFloat"> <a href="#" class="current">周排行</a><a href="#">月排行</a><a href="#">日排行</a> </div>
+					<br style="clear:both" />
+					<ul class="video-list-con">
+						<li><span>1</span><a href="#">WPC-ACE联赛 常规赛第十轮 LGD.int vs IG</a></li>
+						<li><span>2</span><a href="#">DOTA2 DCL联赛 ALLIANCE VS EG 第二局</a></li>
+						<li><span>3</span><a href="#">DOTA2运动员入场：龙神入场韩国选手</a></li>
+						<li><span>4</span><a href="#">冷冷解说：NaVi VS [A] 新版本6·79首战</a></li>
+						<li><span>5</span><a href="#">DOTA2视频爆头集锦第三十二期</a></li>
+						<li><span>6</span><a href="#">Kent追忆解说：D2L S4 LGD vs LGD.INT</a></li>
+						<li><span>7</span><a href="#">DOTA2路人精彩操作集锦： 第一步第一卷</a></li>
+						<li><span>8</span><a href="#">离子DOTA2解说：Dendi的跳刀屠夫 熊孩</a></li>
+						<li><span>9</span><a href="#">WPC-ACE联赛 常规赛第十一轮</a></li>
+						<li><span>10</span><a href="#">WPC-ACE联赛 常规赛第十轮</a></li>
+					</ul>
+					<ul class="video-list-con">
+						<li><span>1</span><a href="#">E时刻dota2精彩集锦第一期：第五届G1冠</a></li>
+						<li><span>2</span><a href="#">17173 Dota2 StarLadder7总决赛 NaVi VS</a></li>
+						<li><span>3</span><a href="#">WPC-ACE联赛 常规赛第四轮 TongFu vs LGD</a></li>
+						<li><span>4</span><a href="#">D2L联赛 TongFu vs VG 第一场-2013年10</a></li>
+						<li><span>5</span><a href="#">冷冷DOTA2视频：敌法师上演励志翻盘局</a></li>
+						<li><span>6</span><a href="#">DOTA2搞笑视频：史上最贱小小你比我贱</a></li>
+						<li><span>7</span><a href="#">DOTA2最新更新展示：血魔20秒穿越地图</a></li>
+						<li><span>8</span><a href="#">Dota2 StarLadder 7 NAVI VS Alliance</a></li>
+						<li><span>9</span><a href="#">WPC-ACE联赛 常规赛第十轮 LGD.int vs IG</a></li>
+						<li><span>10</span><a href="#">逗b武士玩游戏单车dota2船长第一视角</a></li>
+					</ul>
+					<ul class="video-list-con">
+						<li><span>1</span><a href="#">【G1欧美赛区】Alliance vs Navi_1</a></li>
+						<li><span>2</span><a href="#">【G1亚洲区淘汰赛】DK vs LGD.INT_1</a></li>
+						<li><span>3</span><a href="#">【G1亚洲八强】IG vs DK_1</a></li>
+						<li><span>4</span><a href="#">Alliane G1夺冠之路：LODA再创神话</a></li>
+						<li><span>5</span><a href="#">【G1亚洲八强】iG vs Zenith_1</a></li>
+						<li><span>6</span><a href="#">【G1欧美赛区】Alliance vs Navi_3</a></li>
+						<li><span>7</span><a href="#">【G1欧美赛区】Alliance vs Fnatic_1</a></li>
+						<li><span>8</span><a href="#">【G1欧美赛区】Alliance vs Navi_2</a></li>
+						<li><span>9</span><a href="#">第五届G1冠军联赛总决赛Alliance对LGD</a></li>
+						<li><span>10</span><a href="#">【群英会】决赛CCKD vs D9</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="column clearBoth clearFloat">
+				<h2 class="cool"><a href="#">进入视频站</a><span>DOTA2官网英雄资料</span></h2>
+				<div class="hero clearFloat"> <a href="#" class="hero-current-type">全部</a>
+					<div class="hero-tag clearFloat white fl">
+						<ul class="clearFloat">
+							<li><a href="#" class="current">所有英雄</a></li>
+							<li><a href="#">近战</a></li>
+							<li><a href="#">远程</a></li>
+							<li><a href="#">辅助</a></li>
+							<li><a href="#">法师</a></li>
+							<li><a href="#">打野</a></li>
+							<li><a href="#">GANK</a></li>
+							<li><a href="#">肉盾</a></li>
+							<li><a href="#">隐身</a></li>
+							<li><a href="#">治疗</a></li>
+							<li><a href="#">召唤</a></li>
+							<li><a href="#">眩晕</a></li>
+							<li><a href="#">沉默</a></li>
+							<li><a href="#">减速</a></li>
+							<li><a href="#">爆发</a></li>
+							<li><a href="#">闪烁</a></li>
+							<li><a href="#">后期</a></li>
+							<li><a href="#">控制</a></li>
+						</ul>
+					</div>
+					<div class="hero-content white clearFloat fl" style="overflow:auto;">
+						<ul class="clearFloat" id="heroList"></ul>
+						<!-- <div class="slidebar"><a  href="#" title="向下拖动">向下拖动</a></div> -->
+					</div>
+				</div>
+			</div>
+			<div class="items clearFloat">
+				<div class="item">
+					<h2><a href="#">更多&gt;&gt;</a>刀塔2攻略</h2>
+					<div class="item-ct">
+						<div class="item-cover clearFloat"> <a href="#" class="pic"><img src="images/default/2[1] (7).jpg" alt="司夜刺客中单带节奏打法攻略"/></a>
+							<div class="orange fr" style="width:170px;">
+								<h3><a href="#">DOTA2成神之路 司夜刺客中单带节奏打法攻略</a></h3>
+								<p>DOTA2成神之路 司夜刺客中单带节奏打<a href="#">[查看详情]</a></p>
+							</div>
+						</div>
+						<ul class="list-item">
+							<li><span>[11-05]</span><a href="#">DOTA2新手成神之路 冥界亚龙打法攻略心</a></li>
+							<li><span>[11-05]</span><a href="#">DOTA2新手成神之路 剃刀中单及主力攻略</a></li>
+							<li><span>[11-05]</span><a href="#">DOTA2机械舞者 地精修补匠新手向攻略心</a></li>
+							<li><span>[11-05]</span><a href="#">KK出品：DOTA2 6.79版本暗影萨满万字攻</a></li>
+							<li><span>[11-05]</span><a href="#">DOTA2幽鬼新手攻略心得：在我面前都无</a></li>
+							<li><span>[11-04]</span><a href="#">痛苦女王DOTA2 6.79攻略：在女王下尖叫</a></li>
+							<li><span>[11-04]</span><a href="#">DOTA2 6.79版本熊猫酒仙攻略：请叫我国宝</a></li>
+							<li><span>[11-04]</span><a href="#">DOTA2噬魂鬼进阶攻略：狂暴释放 感染寄</a></li>
+							<li><span>[11-04]</span><a href="#">之神DOTA2攻略之钢背兽 能进能退方为真</a></li>
+							<li><span>[11-04]</span><a href="#">DOTA2干扰者攻略：静态风暴中的团战能</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="item">
+					<h2><a href="#">更多&gt;&gt;</a>刀塔2赛事战队</h2>
+					<div class="item-ct">
+						<div class="item-cover clearFloat" style="height:97px;position:relative;">
+							<a href="#" class="teams-prev" title="上一页">上一页</a>
+							<a href="#" class="teams-next" title="下一页">下一页</a>
+							<div class="teams-stage">
+								<div>
+									<div class="teams-con clearFloat">
+										<a href="#" title="alliance战队"><img src="images/default/teams/1.jpg" /></a><a href="#"  title="DK战队"><img src="images/default/teams/2.jpg" /></a><a href="#"  title="IG战队"><img src="images/default/teams/3.jpg" /></a>
+										<a href="#"  title="LGD.CN战队"><img src="images/default/teams/4.jpg" /></a><a href="#"  title="LGD.INT战队"><img src="images/default/teams/5.jpg" /></a><a href="#"  title="NAVI战队"><img src="images/default/teams/6.jpg" /></a>
+									</div>
+									<div class="teams-con clearFloat">
+										<a href="#"  title="ORANGE战队" ><img src="images/default/teams/7.jpg" /></a><a href="#"  title="同福战队"><img src="images/default/teams/8.jpg" /></a><a href="#"  title="ZENITH战队"><img src="images/default/teams/9.jpg" /></a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<ul class="list-item">
+							<li><span>[11-05]</span><a href="#">D2L邀请赛东部赛区LGD.int 2:0轻取Rsnake</a></li>
+							<li><span>[11-05]</span><a href="#">D2L邀请赛东部赛区IG 2:1艰难战胜LGD.int</a></li>
+							<li><span>[11-05]</span><a href="#">D2L邀请赛东部赛区VG 2:0击败DK复仇成</a></li>
+							<li><span>[11-05]</span><a href="#">D2L邀请赛东部赛区VG 2:1艰难击败Rstars</a></li>
+							<li><span>[11-05]</span><a href="#">D2L邀请赛东部赛区DK 2:0轻松战胜Rsnake</a></li>
+							<li><span>[11-04]</span><a href="#">晚上7点直播WPC联赛常规赛VG对阵Rsnake</a></li>
+							<li><span>[11-04]</span><a href="#">ACE联赛 常规赛第十二轮 RStars vs LGD</a></li>
+							<li><span>[11-04]</span><a href="#">WPC-ACE联赛 常规赛第十二轮 DK vs IG</a></li>
+							<li><span>[11-04]</span><a href="#">WPC联赛第十二轮图赏：430前女友亮相解</a></li>
+							<li><span>[11-04]</span><a href="#">下午4点直播WPC联赛常规赛Tongfu对阵同</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="item" style="margin-right:auto">
+					<h2><a href="#">更多&gt;&gt;</a>刀塔2明星访谈</h2>
+					<div class="item-ct">
+						<div class="item-cover clearFloat"> <a href="#" class="pic"><img src="images/default/5.jpg" alt="司夜刺客中单带节奏打法攻略"/></a>
+							<div class="orange fr" style="width:170px;">
+								<h3><a href="#">ACE联赛第二轮同福采访ZSMJ：搞基练默契</a></h3>
+								<p>WPC是一个强强对话的舞台，在昨天(9<a href="#">[查看详情]</a></p>
+							</div>
+						</div>
+						<ul class="list-item">
+							<li><span>[11-05]</span><a href="#">专访Black：新版本适合推进和大家 ACE</a></li>
+							<li><span>[11-05]</span><a href="#">专访Burning：三冰表弟喜欢刷宝 没时间</a></li>
+							<li><span>[11-05]</span><a href="#">老将光哥专访：看好Rsnake.int DK个人</a></li>
+							<li><span>[11-05]</span><a href="#">ACE联赛第二轮同福采访ZSMJ：搞基练默</a></li>
+							<li><span>[11-05]</span><a href="#">WPC联赛第二轮iG赛后采访：我们期待与DK</a></li>
+							<li><span>[11-04]</span><a href="#">WPC DOTA2联赛xiao8采访：开门红只是个</a></li>
+							<li><span>[11-04]</span><a href="#">采访前Orange.Kyxy：任何情况我都不按A</a></li>
+							<li><span>[11-04]</span><a href="#">专访ZSMJ：和zhou神同床 培养同福团队</a></li>
+							<li><span>[11-04]</span><a href="#">Hao：一直向往iG 自身实力配得上世界冠</a></li>
+							<li><span>[11-04]</span><a href="#">专访WNZ夜夜笙歌和风月墨色：有机会就</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="photo clearFloat">
+				<div class="video-img fl">
+					<h2 class="cool"><a href="#">进入图片站</a><span>DOTA2图片站</span></h2>
+					<div class="video-img-tit clearFloat"> <a href="#" class="current">最新图片</a><a href="#">官方墙纸</a><a href="#">同人作品</a><a href="#">赛事战队</a> <a href="#">MM秀场</a> </div>
+					<div class="video-img-list clearFloat radius">
+						<ul class="clearFloat">
+							<li><a href="#"><img src="images/default/photo/1.jpg" /></a><p><a href="#">WPC联赛第十二轮图赏：430前女友亮相解说</a></p></li>
+							<li><a href="#"><img src="images/default/photo/2.jpg" /></a><p><a href="#">WPC-ACE联赛常规赛第十一轮图赏：Slyar助威VG</a></p></li>
+							<li><a href="#"><img src="images/default/photo/3.jpg" /></a><p><a href="#">WPC-ACE联赛常规赛图赏：主持mini展现好身材</a></p></li>
+							<li><a href="#"><img src="images/default/photo/4.jpg" /></a><p><a href="#">WPC联赛LGD.cn VS DK图赏：表弟赤脚上阵</a></p></li>
+							<li><a href="#"><img src="images/default/photo/5.jpg" /></a><p><a href="#">WPC联赛LGD.int VS Rsnake图赏：又见赤脚大仙</a></p></li>
+							<li><a href="#"><img src="images/default/photo/6.jpg" /></a><p><a href="#">WPC-ACE DOTA2联赛第七轮 iG vs LGD.cn图集</a></p></li>
+						</ul>
+						<ul class="clearFloat">
+							<li><a href="#"><img src="images/default/photo/7.jpg" /></a><p><a href="#">17173趣文囧图第三期：进击的不朽尸王</a></p></li>
+							<li><a href="#"><img src="images/default/photo/8.jpg" /></a><p><a href="#">DOTA2玩家原创：非官方精彩英雄壁纸图赏</a></p></li>
+							<li><a href="#"><img src="images/default/photo/9.jpg" /></a><p><a href="#">17173趣闻囧图第二期：那些年的明星职业大神</a></p></li>
+							<li><a href="#"><img src="images/default/photo/10.jpg" /></a><p><a href="#">贴吧水友创意PS照欣赏：融入生活的DOTA2</a></p></li>
+							<li><a href="#"><img src="images/default/photo/11.jpg" /></a><p><a href="#">DOTA2敌法师饰品鉴赏 肉山黑名单超级视角</a></p></li>
+							<li><a href="#"><img src="images/default/photo/12.jpg" /></a><p><a href="#">Dota2肉山化身巨型贪魔让你明白什么叫卖萌</a></p></li>
+						</ul>
+						<ul class="clearFloat">
+							<li><a href="#"><img src="images/default/photo/13.jpg" /></a><p><a href="#">美眉英雄比基尼迎无码 DOTA2开放测试降临</a></p></li>
+							<li><a href="#"><img src="images/default/photo/14.jpg" /></a><p><a href="#">DOTA2绝版GIF表情：大B神专用分身敌法师</a></p></li>
+							<li><a href="#"><img src="images/default/photo/15.jpg" /></a><p><a href="#">英雄美图迎测试 DOTA2无码畅玩25日来袭</a></p></li>
+							<li><a href="#"><img src="images/default/photo/16.jpg" /></a><p><a href="#">77出品DOTA2超精美图集 卡通版萌系英雄来袭</a></p></li>
+							<li><a href="#"><img src="images/default/photo/17.jpg" /></a><p><a href="#">DOTA2 Q版超萌英雄系列图赏：萌死人不偿命</a></p></li>
+							<li><a href="#"><img src="images/default/photo/18.jpg" /></a><p><a href="#">DOTA2玩家原创：非官方精彩英雄壁纸图赏</a></p></li>
+						</ul>
+						<ul class="clearFloat">
+							<li><a href="#"><img src="images/default/photo/19.jpg" /></a><p><a href="#">11月6日WPC联赛图赏：三冰搞怪剪刀石头布</a></p></li>
+							<li><a href="#"><img src="images/default/photo/20.jpg" /></a><p><a href="#">WPC联赛第十二轮图赏：430前女友亮相解说</a></p></li>
+							<li><a href="#"><img src="images/default/photo/21.jpg" /></a><p><a href="#">WPC-ACE联赛常规赛第十一轮图赏：Slyar助威VG</a></p></li>
+							<li><a href="#"><img src="images/default/photo/22.jpg" /></a><p><a href="#">WPC-ACE联赛常规赛图赏：主持mini展现好身材</a></p></li>
+							<li><a href="#"><img src="images/default/photo/23.jpg" /></a><p><a href="#">WPC联赛LGD.cn VS DK图赏：表弟赤脚上阵</a></p></li>
+							<li><a href="#"><img src="images/default/photo/24.jpg" /></a><p><a href="#">WPC联赛LGD.int VS Rsnake图赏：又见赤脚大仙</a></p></li>
+						</ul>
+						<ul class="clearFloat">
+							<li><a href="#"><img src="images/default/photo/25.jpg" /></a><p><a href="#">美眉玩家转型DOTA2 粉猴全新火女COS曝光</a></p></li>
+							<li><a href="#"><img src="images/default/photo/26.jpg" /></a><p><a href="#">DOTA2美眉玩家招募小伙伴 自爆ID及香艳写真</a></p></li>
+							<li><a href="#"><img src="images/default/photo/27.jpg" /></a><p><a href="#">冷冷女神现身TI3国际邀请赛：美艳动人惹人怜爱</a></p></li>
+							<li><a href="#"><img src="images/default/photo/28.jpg" /></a><p><a href="#">TI3邀请赛中文解说冷冷现身：多年谜团破除</a></p></li>
+							<li><a href="#"><img src="images/default/photo/29.jpg" /></a><p><a href="#">DOTA2官方微博刀妹生活照曝光 你还没收听吗？</a></p></li>
+							<li><a href="#"><img src="images/default/photo/30.jpg" /></a><p><a href="#">DOTA2快乐小天使 曹安娜甜美笑容迷倒CJ众生</a></p></li>
+						</ul>
+					</div>
+				</div>
+				<div class="happy fr">
+					<h2 class="cool2">刀塔2趣闻八卦</h2>
+						<div class="item-cover white clearFloat" style="margin-bottom:10px;"> <a href="#" class="pic" style="margin-left:10px;"><img src="images/default/1[2].jpg"/></a>
+							<div class="orange fr" style="width:250px;">
+								<h3><a href="#"  class="red">职业圈再爆绯闻：LGD.DD奶子D事件</a></h3>
+								<p>在11月4日的凌晨，在微博上爆出了一起DOTA圈内少有的感情纠纷事件，两位主角分明是LGD俱乐部的DOTA<a href="#" class="red">[查看详情]</a></p>
+							</div>
+						</div>
+						<div class="item-cover white clearFloat"> <a href="#" class="pic" style="margin-left:10px;"><img src="images/default/2[2].jpg"/></a>
+							<div class="orange fr" style="width:250px;">
+								<h3><a href="#"  class="red">17173趣闻囧图第二期：那些年的明</a></h3>
+								<p>17173趣闻囧图第二期：那些年的明星职业大神<a href="#" class="red">[查看详情]</a></p>
+							</div>
+						</div>
+						<ul class="list-item white" style="padding:18px 10px 20px 15px;">
+							<li><span>[11-05]</span><a href="#">Rstars战队经理微博爆料Sylar转会VG战队内幕</a></li>
+							<li><span>[11-05]</span><a href="#">DOTA2 ACE联盟例会 俱乐部将自行决定参加比赛</a></li>
+							<li><span>[11-05]</span><a href="#">EGL-DOTA2选手系列专题：性感女神篇分享</a></li>
+							<li><span>[11-05]</span><a href="#"  class="red">玩家神总结：打DOTA2必须知道的一百件事</a></li>
+							<li><span>[11-05]</span><a href="#"  class="red">玩家恶搞新DK起航之后：喜闻乐见的演员艺术</a></li>
+							<li><span>[11-04]</span><a href="#">Tongfu香蕉微博怒喷马来狗 Chuan表示躺枪</a></li>
+							<li><span>[11-04]</span><a href="#">DOTA2职业圈大地震：发哥爆料Tongfu成震中心</a></li>
+							<li><span>[11-04]</span><a href="#">DOTA2水友原创斧王之诗：淘汰判决裁决混世</a></li>
+						</ul>
+				</div>
+			</div>
+			<div class="service clearFloat">
+				<div class="leftSidebar fl">
+					<div class="con-l" style="margin-bottom:10px">
+						<h2 class="untit"><span><a href="#">更多&gt;&gt;&gt;</a></span>刀塔2百科<a href="#" style="margin-left:10px;">DOTA2怎么改名字</a><a href="#">DOTA2国服饰品交易</a><a href="#">DOTA2菠菜</a><a href="#">DOTA2什么时候公测</a></h2>
+						<ul class="list-16">
+							<li><span>[10-30]</span><a href="#">DOTA2更新已挂起</a></li>
+							<li><span>[10-30]</span><a href="#">dota2菠菜是什么</a></li>
+							<li><span>[10-30]</span><a href="#">dota2商店什么时候开</a></li>
+							<li><span>[10-30]</span><a href="#">教你DOTA2如何激活控</a></li>
+							<li><span>[10-30]</span><a href="#">dota2无法连接至Steam</a></li>
+							<li><span>[10-30]</span><a href="#">DOTA2如何反和谐-DOTA</a></li>
+							<li><span>[10-30]</span><a href="#">dota2打电脑有装备吗</a></li>
+							<li><span>[10-30]</span><a href="#">snow 蕾拉-DOTA2解说</a></li>
+							<li><span>[10-30]</span><a href="#">dota2无法连接至steam</a></li>
+							<li><span>[10-30]</span><a href="#">dota2怎么交换英雄</a></li>
+							<li><span>[10-30]</span><a href="#">dota2加好友-国服dota</a></li>
+							<li><span>[10-30]</span><a href="#">dota2截图-dota2怎么</a></li>
+							<li><span>[10-30]</span><a href="#">DOTA2显示FPS-国服DOTA</a></li>
+							<li><span>[10-30]</span><a href="#">dota2id怎么改</a></li>
+							<li><span>[10-30]</span><a href="#">dota2无法启动运行</a></li>
+							<li><span>[10-30]</span><a href="#">dota2如何安装</a></li>
+						</ul>
+						<div class="rightPic fr">
+							<p><a href="#"><img src="images/default/12[1].jpg" /></a></p>
+							<p><a href="#"><img src="images/default/11[1] (2).jpg" /></a></p>
+						</div>
+					</div>
+					<div class="con-l">
+						<h2 class="untit">友情链接</h2>
+							<ul class="friend-link">
+								<li><a href="#">DOTA2</a></li>
+								<li><a href="#">刀塔2</a></li>
+								<li><a href="#">超级玩家DOTA2</a></li>
+								<li><a href="#">8090网页游戏</a></li>
+								<li><a href="#">龙之谷</a></li>
+								<li><a href="#">766 DOTA2</a></li>
+								<li><a href="#">游戏港口DOTA2</a></li>
+								<li><a href="#">锐派DOTA2</a></li>
+								<li><a href="#">178DOTA2</a></li>
+								<li><a href="#">太平洋DOTA2</a></li>
+								<li><a href="#">NEOTV DOTA2</a></li>
+								<li><a href="#">DOTA2顶游专区</a></li>
+								<li><a href="#">52PK DOTA2</a></li>
+								<li><a href="#">英雄联盟</a></li>
+								<li><a href="#">17173DNF</a></li>
+								<li><a href="#">魔兽世界</a></li>
+								<li><a href="#">新浪DOTA2</a></li>
+								<li><a href="#">游久DOTA2</a></li>
+								<li><a href="#">Xrush网游加速器</a></li>
+								<li><a href="#">九游安卓游戏</a></li>
+								<li><a href="#">17173剑灵</a></li>
+								<li><a href="#">梦幻西游2</a></li>
+								<li><a href="#">穿越火线</a></li>
+								<li><a href="#">剑灵</a></li>
+								<li><a href="#">魔兽RPG</a></li>
+								<li><a href="#">18183手游网</a></li>
+								<li><a href="#">秦美人</a></li>
+								<li><a href="#">斗蟹dota2</a></li>
+								<li><a href="#">游戏百科</a></li>
+								<li><a href="#">三国杀</a></li>
+								<li><a href="#">mm小游戏</a></li>
+								<li><a href="#">NBA2k14</a></li>
+								<li><a href="#">单机游戏</a></li>
+								<li><a href="#">搜狐</a></li>
+								<li><a href="#">页游网</a></li>
+								<li><a href="#">CF穿越火线</a></li>
+								<li><a href="#">网络游戏排行榜</a></li>
+								<li><a href="#">巴士dota2</a></li>
+								<li><a href="#">单机游戏下载大全</a></li>
+								<li><a href="#">3yx游戏交易</a></li>
+								<li><a href="#">快乐之都</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="rightSidebar fr">
+					<div class="con-r"  style="margin-bottom:10px">
+						<h2 class="untit">DOTA2官网合作专区-刀塔2管理团队</h2>
+						<div style="padding:10px;">
+							<p>游戏名称：DOTA2-刀塔2</p>
+							<p>游戏类型：动作RTS</p>
+							<p>开发公司：Valve&nbsp;&nbsp;&nbsp;&nbsp;运营公司：完美世界</p>
+							<p>游戏状况：开放测试</p>
+							<p>测试时间：9月25日</p>
+							<p>官网地址：<a href="#">DOTA2官网</a>&gt;<a href="#">DOTA2论坛</a>&gt;<a href="#">DOTA2专区</a></p>
+							<p><a href="#">DOTA2视频</a> | <a href="#">DOTA2攻略</a> | <a href="#">DOTA2赛事</a></p>
+							<p>刀塔2责任编辑：大侠、味道、小强、麦小蝈</p>
+						</div>
+					</div>
+					<div class="con-r">
+						<h2 class="untit">关注DOTA2</h2>
+						<div class="code"><img src="images/default/code.jpg" alt="扫描二维码关注DOTA2最新动态"/></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="bottom">
+		<div class="footer white">
+			<div class="search-box-bottom">
+				<form>
+					<label for="serach-box">站内搜索</label>
+					<input type="text" name="serach" id="serach-box" style="margin:0px 5px 0px 5px;height:18px;line-height:18px;" data-placeholder="请输入关键字" />
+					<input type="image" src="images/default/search_btn.jpg" style="position:relative;bottom:-7px;" alt="serach"/>
+				</form>
+			</div>
+			<ul class="link-list clearFloat">
+				<li> <span><a href="#">DOTA2新闻</a></span>
+					<p><a href="#" title="DOTA2官网新闻">DOTA2官网新闻</a></p>
+					<p><a href="#" title="DOTA2赛事新闻">DOTA2赛事新闻</a></p>
+					<p><a href="#" title="DOTA2更新改动">DOTA2更新改动</a></p>
+					<p><a href="#" title="DOTA2公测时间">DOTA2公测时间</a></p>
+					<p><a href="#" title="DOTA2国服">DOTA2国服</a></p>
+					<p><a href="#" title="DOTA2战队">DOTA2战队</a></p>
+					<p><a href="#" title="DOTA2下载安装">DOTA2下载安装</a></p>
+					<p><a href="#" title="DOTA2国服饰品交易">DOTA2国服饰品交易</a></p>
+					<p><a href="#" title="完美DOTA2官网">完美DOTA2官网</a></p>
+				</li>
+				<li> <span><a href="#">DOTA2攻略</a></span>
+					<p><a href="#" title="DOTA2英雄出装">DOTA2英雄出装</a></p>
+					<p><a href="#" title="DOTA2英雄加点">DOTA2英雄加点</a></p>
+					<p><a href="#" title="DOTA2英雄击杀视频">DOTA2英雄击杀视频</a></p>
+					<p><a href="#" title="DOTA2新手教程">DOTA2新手教程</a></p>
+					<p><a href="#" title="DOTA2怎么加好友">DOTA2怎么加好友</a></p>
+					<p><a href="#" title="DOTA2怎么改名字">DOTA2怎么改名字</a></p>
+					<p><a href="#" title="DOTA2问题常识">DOTA2问题常识</a></p>
+					<p><a href="#" title="DOTA2战友招募">DOTA2战友招募</a></p>
+					<p><a href="#" title="DOTA2英雄攻略">DOTA2英雄攻略</a></p>
+				</li>
+				<li> <span><a href="#">DOTA2比赛</a></span>
+					<p><a href="#" title="DOTA2邀请赛">DOTA2邀请赛</a></p>
+					<p><a href="#" title="DOTA2比赛直播">DOTA2比赛直播</a></p>
+					<p><a href="#" title="DSL联赛DOTA2">DSL联赛DOTA2</a></p>
+					<p><a href="#" title="DOTA2超级联赛">DOTA2超级联赛</a></p>
+					<p><a href="#" title="WPC DOTA2联赛">WPC DOTA2联赛</a></p>
+					<p><a href="#" title="DOTA2比赛战队">DOTA2比赛战队</a></p>
+					<p><a href="#" title="DOTA2 G1联赛">DOTA2 G1联赛</a></p>
+					<p><a href="#" title="TI3国际邀请赛">TI3国际邀请赛</a></p>
+					<p><a href="#" title="DOTA2 ACE直播">DOTA2 ACE直播</a></p>
+				</li>
+				<li> <span><a href="#">DOTA2视频</a></span>
+					<p><a href="#" title="DOTA2比赛视频">DOTA2比赛视频</a></p>
+					<p><a href="#" title="DOTA2解说视频">DOTA2解说视频</a></p>
+					<p><a href="#" title="DOTA2蛋疼视频">DOTA2蛋疼视频</a></p>
+					<p><a href="#" title="DOTA2战队视频">DOTA2战队视频</a></p>
+					<p><a href="#" title="DOTA2搞笑视频">DOTA2搞笑视频</a></p>
+					<p><a href="#" title="海涛DOTA2视频">海涛DOTA2视频</a></p>
+					<p><a href="#" title="DOTA2教学视频">DOTA2教学视频</a></p>
+					<p><a href="#" title="DOTA2经典视频">DOTA2经典视频</a></p>
+					<p><a href="#" title="DOTA2第一视角">DOTA2第一视角</a></p>
+				</li>
+				<li style="border-right:none"> <span><a href="#">DOTA2图片</a></span>
+					<p><a href="#" title="DOTA2战队选手图集">DOTA2战队选手图集</a></p>
+					<p><a href="#" title="DOTA2 cosplay">DOTA2 cosplay</a></p>
+					<p><a href="#" title="DOTA2英雄原画">DOTA2英雄原画</a></p>
+					<p><a href="#" title="DOTA2高清屏保">DOTA2高清屏保</a></p>
+					<p><a href="#" title="DOTA2截图">DOTA2截图</a></p>
+					<p><a href="#" title="DOTA2美眉">DOTA2美眉</a></p>
+					<p><a href="#" title="DOTA2漫画">DOTA2漫画</a></p>
+					<p><a href="#" title="DOTA2同人">DOTA2同人</a></p>
+					<p><a href="#" title="DOTA2赛事图集">DOTA2赛事图集</a></p>
+				</li>
+			</ul>
+			<div class="copyright white"> <a href="#">关于17173</a> | <a href="#">人才招聘</a> | <a href="#">广告服务</a> | <a href="#">商务洽谈</a> | <a href="#">联系方式</a> | <a href="#">客服中心</a> | <a href="#">网站导航</a> | <a href="#">刀塔2地图</a>
+				<p>Copyright &#169; 2001-2013 17173. All rights reserved.</p>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>

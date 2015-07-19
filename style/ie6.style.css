@@ -1,0 +1,49 @@
+﻿.search-box-bottom label{ position:relative; bottom:5px; text-indent:0px; font-size:0px; }
+ul.nav-website a,ul.nav-website a:visited{ width:138px; }
+ul.themeImg li{ overflow:hidden;zoom:1 }
+.search-box-input {
+	width:193px;
+}
+div.cover-tit a{
+	width:91.5px;
+}
+a:visited{
+	color:#000;
+}
+#playerNews .ct {
+	margin-left:0px;
+}
+.video-img-list ul{
+	padding-left:13px;
+}
+.video-img-list li {
+	padding-right:5px;padding-left:5px;
+}
+ul.video-list-con{
+	padding-top:30px;
+}
+div.hero-tag ul {
+	padding-left: 5px;
+}
+div.code img{
+	height:210px;
+}
+#shape{
+	color:black;
+}
+.video-column a:visited,.video-list a:visited{
+	color:#ccc;
+}
+div.cover-show img{
+	width: 524px;
+	height:258px;
+}
+.subNav{
+	word-spacing:-5px;
+}
+div.hero-content li {
+padding:6px;
+}
+ul.compete-theme p{
+	background-color:rgb(0,0,0);
+}

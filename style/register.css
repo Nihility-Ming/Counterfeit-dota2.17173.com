@@ -1,0 +1,187 @@
+﻿@charset "utf-8";
+/* register.html */
+* {
+	margin: 0px;
+	padding: 0px;
+}
+html, body {
+	font: 14px/23px "微软雅黑";
+}
+h2 {
+	width: 600px;
+	height: 192px;
+	text-indent: -9999px;
+	background: url(../images/form/logo_register.jpg) no-repeat;
+}
+a, a:visited {
+	color: #000;
+	text-decoration: none;
+}
+ul {
+	list-style-type: none;
+}
+.shadow {
+	border-radius: 5px;
+	box-shadow: 2px 2px 3px #aaa;
+}
+hr {
+	margin: 10px 18px;
+}
+#wrapper {
+	margin: 0px auto;
+	width: 600px;
+}
+legend {
+	font-weight: bold;
+	background-color: #333;
+	color: white;
+	padding: 5px 15px;
+	margin-left: 20px;
+}
+fieldset {
+	/*border:2px solid #09F;*/
+	border: 2px solid #999;
+	padding: 20px;
+}
+fieldset .content div {
+	margin-bottom: 15px;
+}
+label.error {/*jQuery validate plugin*/
+	float: right;
+	color: red;
+	font-size: 12px;
+}
+label.title {
+	float: left;
+	width: 80px;
+	padding-right: 15px;
+	text-align: right;
+}
+span {
+	font-size: 12px;
+	color: #666;
+	padding-left: 15px;
+}
+input.text {
+	padding: 0px 5px 0px 25px;
+	border: none;
+	border-bottom: 1px solid #000;
+	width: 180px;
+}
+input#username {
+	background: url(../images/form/icon_username.png) left center no-repeat;
+}
+input#pwd1, input#pwd2 {
+	background: url(../images/form/icon_password.png) left center no-repeat;
+}
+input#email {
+	background: url(../images/form/icon_email.png) left center no-repeat;
+}
+fieldset div.safety {
+	position: relative;
+	bottom: 6px;
+	font-size: 12px;
+	padding-left: 80px;
+	margin-bottom: 0px;
+	overflow: hidden;
+	zoom: 1;
+}
+fieldset div.safety span {
+	float: left;
+}
+fieldset div.safety span.change {
+	background-color: #999;
+	padding: 0px 15px;
+	margin-right: 5px;
+	color: white;
+}
+fieldset div.safety span.selected {
+	background-color: #333;
+}
+div.button {
+	padding-left: 100px;
+}
+div.button input {
+	height: 30px;
+	line-height: 30px;
+	border: 1px solid #000;
+	background-color: white;
+	margin-right: 20px;
+	font-size: 12px;
+	width: 85px;
+}
+div.button input:hover {
+	border: 1px solid #999;
+}
+div.button input:active {
+	border: 1px solid #F00;
+}
+a.optionTitle {
+	margin-left: 10px;
+	display: inline-block;
+	background: url(../images/form/option_t.gif) left center no-repeat;
+	padding-left: 20px;
+}
+a.optionTitleO {
+	background-image: url(../images/form/option_t-o.gif);
+}
+div.optionTable {
+	/*display:none;*/
+	padding: 10px;
+	background-color: #ddd;
+}
+div.optionTable span {
+	margin: 0px 20px;
+	cursor: pointer;
+	color: #000;
+	display: inline-block;
+	padding-left: 18px;
+	background: url(../images/form/option_c.gif) left no-repeat;
+}
+div.optionTable span.o {
+	background-image: url(../images/form/option_o.gif);
+}
+div#sex span input {
+	margin-right: 5px;
+}
+div#sex span {
+	color: black;
+	padding-left: 0px;
+	margin-right: 10px;
+}
+div textarea {
+	padding: 5px;
+	width: 322px;
+	height: 62px;
+}
+#icon_content {
+	float: left;
+	display: block;
+	width: 45px;
+	height: 45px;
+	margin-bottom: 0px;
+	overflow: hidden;
+	position: relative;
+}
+div#agreement {
+	padding-left: 95px;
+}
+div#agreement input {
+	margin-right: 8px;
+}
+div#agreement p {
+	font-size: 12px;
+}
+div#agreement p a {
+	color: blue;
+	text-decoration: underline;
+}
+div.copyright {
+	background-color:#ccc;
+	text-align: center;
+	font-size: 12px;
+	text-transform: capitalize;
+	padding-top:10px;
+	padding-bottom:10px;
+	margin-top:50px;
+}

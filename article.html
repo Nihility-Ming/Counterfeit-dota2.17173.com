@@ -1,0 +1,439 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>DOTA2新手成神之路虚空假面攻略：时间使者_17173合作专区</title>
+<link type="text/css" href="style/global.css" rel="stylesheet" />
+<link type="text/css" href="style/article.css" rel="stylesheet" />
+<!--[if IE 6]><link type="text/css" href="style/ie6.style.css" rel="stylesheet" /><![endif]-->
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery.easing.js"></script>
+<script type="text/javascript" src="js/javascript.showandhidden.js"></script>
+<script type="text/javascript" src="js/jquery.scrollLevel.js"></script>
+<script type="text/javascript" src="js/jquery.inputPrompt.js"></script>
+<script type="text/javascript" src="js/jquery.scrollTop.js"></script>
+<script type="text/javascript" src="js/jquery.tagpage.js"></script>
+<script type="text/javascript">
+$(function(){
+/* topNav all guide show an hidden */
+showAndHidden('allGuide','allGuideCon');
+/* Execute Custom jQuery Plugin (tagPage) */
+jQuery.tagPage('.competeTable div .tit','.competeTable table','current');
+/* Execute Custom jQuery Plugin (inputPrompt) */
+jQuery.inputPrompt('#review-box-text','#999','#000');
+jQuery.inputPrompt('.search-box-bottom input:first','#999','#000');
+jQuery.inputPrompt('#reviewInputBox','#999','#000');
+/* Execute Custom jQuery Plugin (scrollLevel) */
+jQuery.scrollLevel('#playerNews .ct','#playerNews .prev','#playerNews .next',4,'easeOutElastic');
+/* Execute Custom jQuery Plugin (scrollTop) */
+jQuery.scrollTop(false,false,'easeInOutElastic',1000);
+/* cancel not register.html anchor click event */
+$('a:not(".ct .right a:eq(1)")').click(function(e){e.preventDefault();});
+$('.sameArtical').hover(function(){$(this).stop().animate({'height':'280px'});},function(){$(this).stop().animate({'height':'163px'});});
+/* change article font size */
+$('.changeFontSize a').click(function(){// response click event
+	var	$this=$(this);
+		fontSize=parseInt($this.attr('title'));
+	$('.changeFontSize a').removeClass('current');
+	$(this).addClass('current');
+	$('.article').css('font-size',fontSize);
+}).eq(1).trigger('click');//end click
+/* reviewPanel */
+$('#reviewPanel').load('review.php');//request default display content
+$('#number').load('review.php?number');//counter of people number
+$('#review').submit(function(evt){
+	evt.preventDefault();
+	jQuery.get('review.php?send='+$('#review-box-text').val(),function(date){
+		$('#reviewPanel').html(date);//update review
+	});//end get
+});//end submit
+});//end ready
+</script>
+</head>
+<body>
+<div class="topNav">
+	<div class="ct">
+		<div class="left fl">
+			<a href="#" class="home">17173首页</a>
+			<div id="allGuide">
+			<a href="#" class="allGuide">全站导航</a>
+				<div id="allGuideCon">
+					<table class="allGuideTable" cellspacing="0">
+						<tr>
+							<td style="width:122px;height:141px;">
+								<h3><a href="#" style="color:#1c6ec5">新闻</a></h3>
+								<a href="#">产业</a>&nbsp;&nbsp;&nbsp;<a href="#">全球</a>&nbsp;&nbsp;&nbsp;<a href="#">大陆 </a><br /><a href="#">图片</a>&nbsp;&nbsp;&nbsp;<a href="#">话题</a>&nbsp;&nbsp;&nbsp;<a href="#">大观</a>
+								<h3><a href="#"  style="color:#1c6ec5">新网游</a></h3>
+								<a href="#">测试表</a>&nbsp;<a href="#">激活码</a>&nbsp;<a href="#">评测</a>&nbsp;<br /><a href="#">期待榜</a>&nbsp;<a href="#">厂商黄页</a>&nbsp;
+							</td>
+							<td style="width:124px">
+								<h3><a href="#"  style="color:#626262">热门游戏</a></h3>
+								<a href="#">魔兽世界</a>&nbsp;&nbsp;<a href="#">DNF</a>&nbsp;&nbsp;<br />
+								<a href="#">梦幻西游</a>&nbsp;&nbsp;<a href="#">英雄联盟</a>&nbsp;&nbsp;<br />
+								<a href="#">斗战神</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">天龙八部</a>&nbsp;&nbsp;<br />
+								<a href="#">QQ飞车</a>&nbsp;&nbsp;&nbsp;<a href="#">远征OL</a>&nbsp;&nbsp;<br />
+								<a href="#">剑网3</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">找游戏&gt;&gt;</a>&nbsp;&nbsp;<br />
+							</td>
+							<td style="width:97px">
+								<h3><a href="#" style="color:#b53939">游戏视频</a></h3>
+								<a href="#">新游视频</a>&nbsp;&nbsp;<a href="#">单机</a><br />
+								<a href="#">播客</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">魔兽</a><br />
+								<a href="#">DNF</a>&nbsp;&nbsp;<a href="#">天龙八部</a><br />
+								<a href="#">征途2</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">LOL</a><br />
+								<a href="#">专题</a>
+							</td>
+							<td style="width:97px">
+								<h3><a href="#"  style="color:#3fa252">互动中心</a></h3>
+								<a href="#">玩家中心</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">论坛</a><br />
+								<a href="#">商城</a>&nbsp;&nbsp;<a href="#">发号</a>&nbsp;&nbsp;<a href="#">百科</a><br />
+								<a href="#">活动</a>&nbsp;&nbsp;<a href="#">公会</a>&nbsp;&nbsp;<a href="#">DKP</a><br />
+								<a href="#">读书</a>&nbsp;&nbsp;<a href="#">博客</a>&nbsp;&nbsp;<a href="#">微博</a><br />
+								<a href="#">邮箱</a>
+							</td>
+							<td>
+							<a href="#">网络游戏</a><br />
+							<a href="#">网页游戏</a><br />
+							<a href="#">flash小游戏</a><br />
+							<a href="#">iPhone/iPad</a><br />
+							<a href="#">电竞</a>&nbsp;&nbsp;<a href="#">单机</a><br />
+							<a href="#">上去玩玩</a>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="5">
+								<div class="fl" style="padding-left:35px"><a href="#">17173游戏神灯</a>：<br />
+<a href="#">LOL</a> / <a href="#">DNF</a> / <a href="#">梦幻</a> / <a href="#">CF</a></div>
+								<div class="fl" style="padding-left:117px"><a href="#">游戏数据库</a><br />
+<a href="#">WOW</a> / <a href="#">DNF</a> / <a href="#">LOL</a> / <a href="#">鹿鼎记</a></div>
+								<div class="fr" style="padding-right:23px"><a href="#">游戏下载</a><br />
+<a href="#">帮助中心</a></div>
+							</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		<a href="#" class="message">玩家回忆录：DOTA6.78的光辉时光</a> <a href="#" class="app">手机客户端</a> </div>
+		<div class="right fr" style="border-right:1px solid #fff"> <a href="#" class="login">登录</a><a href="register.html" target="_blank">注册</a> </div>
+	</div>
+</div>
+<div class="wrapper">
+	<div class="header ct990">
+		<div class="nav-index fl"> <a href="default.html" class="index">首页</a> <a href="#" class="setIndex" title="设为主页">设为主页</a> <a href="#" class="setIndex" title="收藏主站">收藏主站</a> </div>
+		<div class="nav-main fl">
+			<ul class="nav-website clearFloat">
+				<li><a href="#" id="current">视频站</a></li>
+				<li><a href="#">攻略站</a></li>
+				<li><a href="#">赛事站</a></li>
+				<li><a href="#">图片站</a></li>
+				<li><a href="#" style="margin-right:0px;">数据库</a></li>
+			</ul>
+			<div class="subNav clearFloat">
+				<div class="fl white"> <span>热点资讯</span> <a href="#">DOTA2公测</a> | <a href="#">国服饰品交易</a> | <a href="#">DOTA2官网</a><br/>
+					<a href="#" class="yellowStrong">Dota2加好友</a> | <a href="#" class="yellowStrong">Dota2改名</a> | <a href="#">战队排名</a><br />
+					<a href="#" class="yellowStrong">DOTA2饰品兑换</a> | <a href="#">ACE联赛</a> | <a href="#">WPC直播</a> </div>
+				<div class="fl  white"> <span>精彩视频</span> <a href="#">DOTA2集锦</a> | <a href="#">比赛视频</a> | <a href="#">海涛DOTA2视频</a><br/>
+					<a href="#">战队视频</a> | <a href="#">DOTA2蛋疼集锦</a> | <a href="#">DOTA2搞笑</a><br />
+					<a href="#">DOTA2教学视频</a> | <a href="#">老党视频</a> | <a href="#">WPC直播</a> </div>
+				<div class="fl  white" style="margin-right:0px;"> <span>教程攻略</span> <a href="#">DOTA2安装</a> | <a href="#">新手教程</a> | <a href="#">DOTA2饰品交易</a><br />
+					<a href="#">DOTA2交易</a> | <a href="#">战友招募</a> | <a href="#">DOTA2菠菜</a><br />
+					<a href="#">DOTA2战队</a> | <a href="#">极品装备</a> | <a href="#">DOTA2问答</a></div>
+			</div>
+		</div>
+		<div class="nav-right fr"> <a href="#" class="gameDown">游戏下载</a> <a href="#" class="enterBBS">进入论坛</a> </div>
+		<br style="clear:both" />
+		<div class="news white">
+			<div style="background-color:black;padding:3px;margin-right:20px;" class="fl"><a href="#"><img src="images/default/wpc.jpg" alt="wpc" title="wpc" />
+				<p style="text-align:center;">WPC-ACE DOTA2联赛</p>
+				</a></div>
+			<div class="competeTable fl">
+                  	<div style="margin-bottom:12px"><span class="witch fr">观看直播：<a href="#" class="ace">ACE直播</a></span><strong style="margin-right:15px">赛程表</strong><span class="competeNav"><a href="#" class="tit current">17</a><a href="#" class="tit">20</a><a href="#" class="tit">21</a><a href="#" class="tit">22</a></span></div>
+                        <table style="width:100%">
+                        	<tr>
+                              	<td class="t-icon"></td><td style="color:#922626;width:45px;">NISM </td><td style="color:#922626;width:45px;">13:00</td><td style="width:55px;text-align:right;">DK</td><td style="width:80px;text-align:center;"><img src="images/default/cn.gif" />VS<img src="images/default/rs.gif" /></td><td>Alliance</td><td style="width:70px;text-align:right;padding-right:5px;"><a href="#" style="color:#ff9459">NISM直播</a></td>
+                              </tr>
+                              <tr>
+                              	<td class="t-icon"></td><td style="color:#922626;width:45px;">WPC</td><td style="color:#922626;width:45px;">16:00</td><td style="width:55px;text-align:right;">WPC.A</td><td style="width:80px;text-align:center;"><img src="images/default/cn.gif" />VS<img src="images/default/cn.gif" /></td><td>LGD.int</td><td style="width:70px;text-align:right;padding-right:5px;"><a href="#" style="color:#ff9459">WPC直播</a></td>
+                              </tr>
+                              <tr>
+                              	<td class="t-icon"></td><td style="color:#922626;width:45px;">WPC</td><td style="color:#922626;width:45px;">19:00</td><td style="width:55px;text-align:right;">Tongfu</td><td style="width:80px;text-align:center;"><img src="images/default/cn.gif" />VS<img src="images/default/cn.gif" /></td><td>Rsnake</td><td style="width:70px;text-align:right;padding-right:5px;"><a href="#" style="color:#ff9459">NISM直播</a></td>
+                              </tr>
+                        </table>
+                        <table style="width:100%">
+                        	<tr>
+                              	<td class="t-icon"></td><td style="color:#922626;width:45px;">WPC</td><td style="color:#922626;width:45px;">16:00</td><td style="width:55px;text-align:right;">DK</td><td style="width:80px;text-align:center;"><img src="images/default/cn.gif" />VS<img src="images/default/cn.gif" /></td><td>LGD.int</td><td style="width:70px;text-align:right;padding-right:5px;"><a href="#" style="color:#ff9459">NISM直播</a></td>
+                              </tr>
+                              <tr>
+                              	<td class="t-icon"></td><td style="color:#922626;width:45px;">WPC</td><td style="color:#922626;width:45px;">19:00</td><td style="width:55px;text-align:right;">WPC.A</td><td style="width:80px;text-align:center;"><img src="images/default/cn.gif" />VS<img src="images/default/cn.gif" /></td><td>LGD.int</td><td style="width:70px;text-align:right;padding-right:5px;"><a href="#" style="color:#ff9459">WPC直播</a></td>
+                              </tr>
+                        </table>
+                        <table style="width:100%">
+                        	<tr>
+                              	<td class="t-icon"></td><td style="color:#922626;width:45px;">NISM </td><td style="color:#922626;width:45px;">16:00</td><td style="width:55px;text-align:right;">LGD.cn</td><td style="width:80px;text-align:center;"><img src="images/default/cn.gif" />VS<img src="images/default/cn.gif" /></td><td>Rsnake</td><td style="width:70px;text-align:right;padding-right:5px;"><a href="#" style="color:#ff9459">NISM直播</a></td>
+                          </tr>
+                              <tr>
+                              	<td class="t-icon"></td><td style="color:#922626;width:45px;">WPC</td>
+                              	<td style="color:#922626;width:45px;">19:00</td>
+                              	<td style="width:55px;text-align:right;">iG</td><td style="width:80px;text-align:center;"><img src="images/default/cn.gif" />VS<img src="images/default/cn.gif" /></td><td>Rstars</td><td style="width:70px;text-align:right;padding-right:5px;"><a href="#" style="color:#ff9459">WPC直播</a></td>
+                              </tr>
+                    </table>
+                    <table style="width:100%">
+                       	  <tr>
+                             	  <td class="t-icon"></td><td style="color:#922626;width:45px;">NISM </td><td style="color:#922626;width:45px;">13:00</td><td style="width:55px;text-align:right;">Tongfu</td><td style="width:80px;text-align:center;"><img src="images/default/cn.gif" />VS<img src="images/default/cn.gif" /></td><td>HGT</td><td style="width:70px;text-align:right;padding-right:5px;"><a href="#" style="color:#ff9459">NISM直播</a></td>
+                      </tr>
+                          <tr>
+                             	  <td class="t-icon"></td><td style="color:#922626;width:45px;">WPC</td><td style="color:#922626;width:45px;">16:00</td><td style="width:55px;text-align:right;">VG</td><td style="width:80px;text-align:center;"><img src="images/default/cn.gif" />VS<img src="images/default/cn.gif" /></td><td>LGD.int</td><td style="width:70px;text-align:right;padding-right:5px;"><a href="#" style="color:#ff9459">WPC直播</a></td>
+                          </tr>
+                </table>
+                </div>
+			<div class="fr clearFloat" id="playerNews"> <a href="#" class="prev" title="上一张">上一张</a> <a href="#" class="next" title="下一张"> 下一张                                               </a>
+				<div class="ct">
+					<div class="clearFloat">
+						<div class="ct_item"><a href="#"><img src="images/default/scrollLeft/1.jpg" alt="G1冠军联赛" title="G1冠军联赛"/><p>G1冠军联赛</p></a></div>
+						<div class="ct_item"><a href="#"><img src="images/default/scrollLeft/2.jpg" alt="第三届DOTA2国际邀请赛" title="第三届DOTA2国际邀请赛"/><p>第三届DOTA2国际邀请赛</p></a></div>
+						<div class="ct_item"><a href="#"><img src="images/default/scrollLeft/3.jpg" alt="ECL2013电子竞技冠军联赛" title="ECL2013电子竞技冠军联赛"/><p>ECL2013电子竞技冠军联赛</p></a></div>
+						<div class="ct_item"><a href="#"><img src="images/default/scrollLeft/4.jpg" alt="DOTA2超级联赛" title="DOTA2超级联赛"/><p>DOTA2超级联赛</p></a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="main ct990">
+	  <div class="ct clearFloat clearBoth">
+     	    <p class="location"><a href="#">Dota2</a> &gt; <a href="#">英雄经验</a> &gt; DOTA2新手成神之路虚空假面攻略：时间使者</p>
+          <p class="changeFontSize">字号：<a href="#" title="16">大</a><a href="#" title="14">中</a><a href="#" title="12">小</a></p>
+          <h1>DOTA2新手成神之路虚空假面攻略：时间使者</h1>
+          <div class="info"><span class="time">时间：2013-11-12</span><span class="review">参与评价(<a href="#" class="red">0</a>)<a href="#" class="red">【投稿】</a></span><span class="author">作者：by小石</span></div>
+          <div class="summary">
+            	<div class="col-01">文 章<br />摘 要</div>
+                  <div class="col-02">暗惧者虚空假面是来自超维视界的一名访客，一个时间之外的境域。它那长远的宇宙视角赐予它悠久却不相关的特技，但没关系，在战场上它完全能随心施展这些能力。</div>
+                  <div class="clearBoth"></div>
+            </div>
+            <div class="article red">
+            	<p style="text-align:center"><a href="#"><img src="images/article/111210371427814004.jpg" alt="虚空假面" title="虚空假面" /></a></p>
+            	<p>　　<strong>一.背景故事</strong></p>
+            	<p>　　暗惧者虚空假面是来自超维视界的一名访客，一个时间之外的境域。这个来自其他维度的存在，坚信为复仇之石的争斗值得它降临我们物质位面的原因，依然是个迷，但显然它对这个世界平衡力扰乱的后果已经反映到了相邻的维度。时间对暗惧者毫无意义，除了作为一种阻挠敌人并帮助盟友的手段。它那长远的宇宙视角赐予它悠久却不相关的特技，但没关系，在战场上它完全能随心施展这些能力。</p>
+            	<p>　　<strong>二.英雄基础属性</strong></p>
+            	<p>　　生命：587</p>
+            	<p>　　魔法：195</p>
+            	<p>　　护甲：3</p>
+            	<p>　　攻击力：58-64</p>
+            	<p>　　移动速度：300</p>
+            	<p>　　视野范围：1800/800</p>
+            	<p>　　攻击距离：近战</p>
+            	<p>　　弹道速度：直接</p>
+            	<p>　　攻击前摇/后摇：0.5+0.56</p>
+            	<p>　　施法前摇/后摇：0.35+0.51</p>
+            	<p>　　基础攻击间隔：1.7</p>
+            	<p>　　英雄成长性如下图：</p>
+            	<p style="text-align:center"><a href="#"><img title="DOTA2新手成神之路虚空假面攻略：时间使者" alt="DOTA2新手成神之路虚空假面攻略：时间使者" src="images/article/111210371429214008.jpg"></a></p>
+            	<p>　　<strong>三.英雄技能介绍与分析</strong></p>
+            	<p style="text-align:center"><a href="#"><img title="DOTA2新手成神之路虚空假面攻略：时间使者" alt="DOTA2新手成神之路虚空假面攻略：时间使者" src="images/article/111210371428214005.jpg"></a></p>
+            	<p>　　1技能:时间漫游</p>
+            	<p>　　冲到目标位置，降低路径上所有的敌人的移动速度和攻击速度，持续3秒。</p>
+            	<p>　　技能：点目标</p>
+            	<p>　　移动速度减缓：20% / 30% / 40% / 50%</p>
+            	<p>　　距离： 700 / 900 / 1100 / 1300</p>
+            	<p>　　魔法消耗：120/120/120/120</p>
+            	<p>　　冷却时间：19/17/15/13</p>
+            	<p>　　技能细节：①虚空假面在时间漫步过程中为无敌状态。</p>
+            	<p>　　<strong>『技能分析及注意事项』</strong></p>
+            	<p>　　时间漫游是虚空假面的位移技能，用于战场上先手切入或后手逃生。在一级时就有700距离的位移，而cd则是19秒，满级的时间漫游距离则是1300，cd缩短为13秒，因此该技能在前期只需一点足矣。不需要将技能点过多的分配给时间漫游。需要注意的是时间漫游的耗魔大，切入的时候请算好魔量，以免造成使用时间漫游而不能使用时间结界的尴尬。</p>
+            	<p style="text-align:center"><a href="#"><img title="DOTA2新手成神之路虚空假面攻略：时间使者" alt="DOTA2新手成神之路虚空假面攻略：时间使者" src="images/article/111210371428614006.jpg"></a></p>
+            	<p>　　2技能: 回到过去</p>
+            	<p>　　虚空假面通过将时间向回移动一小段，来闪避一切(包括物理和魔法)伤害。</p>
+            	<p>　　技能：被动</p>
+            	<p>　　闪避概率： 10% / 15% / 20% / 25%</p>
+            	<p>　　技能细节：①与闪避效果叠加。②回到过去可以闪避克敌机先类技能效果。。</p>
+            	<p>　　<strong>『技能分析及注意事项』</strong></p>
+            	<p>　　虚空假面非常无敌的被动，可以闪避一切伤害，而且回到过去可以与蝴蝶这些闪避道具叠加，但需要注意的是该被动非常考验rp，并且回到过去只能闪避伤害，但是不能闪避效果，例如眩晕是不能被闪避的。因此在前期推荐只需点出一点足矣。</p>
+            	<p style="text-align:center"><a href="#"><img title="DOTA2新手成神之路虚空假面攻略：时间使者" alt="DOTA2新手成神之路虚空假面攻略：时间使者" src="images/article/111210371428914007.jpg"></a></p>
+            	<p>　　3技能: 时间锁定</p>
+            	<p>　　攻击有一定概率将一个敌方目标锁定在时间中，造成眩晕及额外伤害。对普通单位的持续时间加倍。</p>
+            	<p>　　技能：被动</p>
+            	<p>　　伤害类型：魔法持续时间：1</p>
+            	<p>　　触发概率：10% / 15% / 20% / 25%</p>
+            	<p>　　额外伤害：40 / 50 / 60 / 70</p>
+            	<p>　　技能细节：①眩晕效果无视魔法免疫。②不与碎颅锤叠加。③对时间结界内单位造成双倍额外伤害。</p>
+            	<p>　　<strong>『技能分析及注意事项』</strong></p>
+            	<p>　　虚空假面的攻击性被动技能，依旧非常考验人品。但是时间锁定在追杀的时候效果非常好，由于其不像白牛的巨力重击有cd的限制，因此只要虚空假面攻速够快，还是比较容易打出时间锁定的。并且时间锁定还附带额外伤害，这个伤害相当于虚空假面需要多攻击一下。推荐作为主技能，这样虚空假面会比较具有侵略性。</p>
+            	<p style="text-align:center"><a href="#"><img title="DOTA2新手成神之路虚空假面攻略：时间使者" alt="DOTA2新手成神之路虚空假面攻略：时间使者" src="images/article/111210371429214009.jpg"></a></p>
+            	<p>　　4技能: 时间结界</p>
+            	<p>　　在时空中创造一个泡状遮罩，将所有位于其中的单位定住。只有虚空假面和他控制的单位不受影响。在其中的隐身单位会显形。 可用神杖升级。</p>
+            	<p>　　技能：点目标</p>
+            	<p>　　作用范围：450</p>
+            	<p>　　持续时间： 4 / 4.5 / 5</p>
+            	<p>　　魔法消耗：150/175/200</p>
+            	<p>　　冷却时间：120/110/100</p>
+            	<p>　　神杖升级持续时间：4 / 5 / 6</p>
+            	<p>　　神杖升级冷却时间：60 / 60 / 60</p>
+            	<p>　　技能细节：①能够定住所有单位和建筑，不论敌我。除了虚空假面控制的单位。③虚空假面不受任何结界的影响。④可以显示隐形单位。</p>
+            	<p>　　<strong>『技能分析及注意事项』</strong></p>
+            	<p>　　虚空假面强力的团控技能，只要在时间结界的范围内，双方英雄都会被控制住，包括自己的队友。但是如果在时间结界的范围外，是可以任意攻击和施法的。而1级时长达4秒的持续时间是非常IMBA的存在。需要注意的是时间结界非常强力，但需要玩家对施放时机要有一个非常强的判断能力，要竟可能多的放到对方英雄，而不要放到己方队友，这对玩家的操作能力是一个挑战。我推荐虚空假面可以先上去&ldquo;嘲讽&rdquo;，吸收一部分伤害，这样对面的玩家才会靠过来。这时候再放时间结界，效果会比较好。</p>
+            	<p>　　<strong>四.虚空假面的英雄定位</strong></p>
+            	<p>　　虚空假面在队伍中的定位是后期大核，输出相当可观。但需要装备的支撑，因此也是队伍需要重点保护的对象。但是虚空假面本身在线上较弱，成长时间长，往往需要很长的时间才能装备成型，这就需要依赖队友在虚空假面发展经济的这段时间顶住压力。如果团队aoe伤害较高，推荐早点参团，哪怕是只放一个时间结界，都能给团队带来非常有利的局面。</p>
+            	<p>　　<strong>五.虚空假面加点及出装</strong></p>
+            	<p>　　虚空假面加点方面一级点出时间漫游，这样在1级能够有逃生追杀的能力。二级时点出时间锁定，三级点回到过去，之后主时间锁定，辅回到过去，期间有大加大具体加点方案见下图：</p>
+            	<p style="text-align:center"><a href="#"><img title="DOTA2新手成神之路虚空假面攻略：时间使者" alt="DOTA2新手成神之路虚空假面攻略：时间使者" src="images/article/111210371429314010.jpg"></a></p>
+            	<p>　　虚空假面出门装推荐：</p>
+            	<p>　　(1). 随机选择，金钱825</p>
+            	<p>　　圆盾(250)+压制之刃(225)+树枝(53x2)+树之祭祀(125)+ +治疗药膏(115)=821</p>
+            	<p>　　(2). 随机选择后交换，金钱725</p>
+            	<p>　　圆盾(250)+压制之刃(225)+树枝(53x2)+树之祭祀(125) =706</p>
+            	<p>　　(3). 手动选择，金钱625</p>
+            	<p>　　圆盾(250)+ 树枝(53x2)+树之祭祀(125) +治疗药膏(115)=596</p>
+            	<p>　　(4). 重新选择，金钱475</p>
+            	<p>　　圆盾(250)+树枝(53)+树之祭祀(125)+=428</p>
+            	<p>　　虚空假面前中期装备选择：</p>
+            	<p>　　虚空假面通常是在优势路由队友保护发展，推荐虚空假面的第一件装备出迈达斯之手，也就是俗称的点金手，虚空假面需要很长时间的发育才能成型，而迈达斯之手可以给虚空提供大量金钱和经验。战局拖得时间越长迈达斯之手的效果就越能体现。之后虚空假面选择出假腿，进一步提高攻速;在这期间可以把大魔棒顺带做出来。接着是必备的疯狂面具。如果顺利的话前中期还能出一个漩涡，带线刷钱好帮手。</p>
+            	<p>　　虚空假面后期出装推荐：</p>
+            	<p>　　到了后期虚空假面可以先将漩涡合成为雷神之锤，紧接着出分身斧，输出相当的高，而分身斧的小件夜叉对于虚空假面的伤害提高也非常大。如果对面控制太多，可以优先考虑在漩涡后先做出黑皇杖，增加自己的防被控生存能力。然后就是蝴蝶，有了蝴蝶的虚空假面配合被动回到过去会非常的肉。最后为了进一步提高输出可以选择出代达罗斯之殇或者是金箍棒。</p>
+            	<p>　　<strong>六. 虚空假面小贴士</strong></p>
+            	<p>　　1.虚空假面不管什么时候都需随身带TP，以方便支援和逃生。</p>
+            	<p>　　2.能和虚空假面配合的英雄非常多，像船长，只要虚空罩住人，船长的大可以完美的进行配合，再配合船油可以为虚空假面减掉大量的伤害。还有就是巫妖，如果在野外，或者没有小兵的情况下，虚空假面的时间结界配合巫妖的大招，可以直接团灭掉对方。</p>
+            	<p>　　3.克制虚空的英雄主要是在对线时碰到远程的英雄。像剧毒术士和冥界亚龙都是虚空假面非常头疼的对象。还有就是帕吉，当虚空罩住对面的英雄时，帕吉可以选择将自己的队友钩出来，或者将虚空假面钩出来，这都会白白浪费掉虚空假面的大招。</p>
+            	<p>更多<a href="#"><strong>刀塔2</strong></a>新闻，<a href="#"><strong>DOTA2视频</strong></a>，<a title="DOTA2英雄出装" href="#"><strong>DOTA2英雄出装</strong></a>，<a title="DOTA2官网" href="#"><strong>DOTA2官网</strong></a>资讯，请继续关注17173<a href="#"><strong>DOTA2</strong></a>专区：<a href="#">http://dota2.17173.com/</a></p>
+            </div>
+            <div class="panel">
+            	<div class="share">
+                  	<span class="fr"><a href="#" class="blue">收藏本文</a></span>
+                  	<span class="gray">分享到：</span>
+                        <a href="#" class="icon icon_1" title="分享到搜狐微博">分享到搜狐微博</a>
+                        <a href="#" class="icon icon_2" title="分享到QQ空间">分享到QQ空间</a>
+                        <a href="#" class="icon icon_3" title="分享到新浪微博">分享到新浪微博</a>
+                        <a href="#" class="icon icon_4" title=" 分享到腾讯微博">分享到腾讯微博</a>
+                        <a href="#" class="icon icon_5" title="分享到开心网">分享到开心网</a>
+                        <a href="#" class="icon icon_6" title="分享到人人网">分享到人人网</a>
+                        <a href="#" class="icon icon_7" title="分享到网易微博">分享到网易微博</a>
+                        <a href="#" class="icon icon_8" title="一键分享">一键分享</a>
+                  </div>
+                  <div class="viewpoint-box">
+                  <form id="review" method="get">
+                  	<p class="font14px_bold" style="margin-bottom:10px;">请您发表观点</p>
+                        <input type="text" id="review-box-text" name="review-box-text" data-placeholder="输入观点，字数限制35个汉字内" maxlength="35"/>
+                        <input type="submit" value="发表观点" id="review-box-submit" />
+                  </form>
+                  </div>
+                  <p style="border-bottom:solid 1px #333">看完这篇新闻有何感觉？已经有<span style="color:red" id="number">1</span>人表态</p>
+                 <ol id="reviewPanel">
+                 </ol>
+            </div>
+            <div class="relevant clearFloat  sblue">
+            	<div class="items fl">
+                  	<h2>玩家评出最<strong class="sblue">"酱油路过"</strong>的文章排行</h2>
+                        <ul>
+                        	<li><span class="date">(2013-11-11)</span><em>1</em><span class="anchor"><a href="#">职业圈再爆绯闻：LGD.DD奶子D事件完整详情</a></span><span>评论<strong>23</strong>条</span></li>
+                              <li><span class="date">(2013-11-11)</span><em>2</em><span class="anchor"><a href="#">NEST DOTA2直播一套-NEST DOTA2总决赛直播</a></span><span>评论<strong>18</strong>条</span></li>
+                              <li><span class="date">(2013-11-11)</span><em>3</em><span class="anchor"><a href="#">冷冷DOTA2解说：NaVi VS [A] 新版本6.79首战</a></span><span>评论<strong>11</strong>条</span></li>
+                              <li><span class="date">(2013-11-11)</span><em>4</em><span class="anchor"><a href="#">《倒不了的塔》女王登场 DOTA2喷血图集典藏</a></span><span>评论<strong>7</strong>条</span></li>
+                              <li><span class="date">(2013-11-11)</span><em>5</em><span class="anchor"><a href="#">职业圈再爆绯闻：LGD.DD奶子D事件完整详情</a></span><span>评论<strong>15</strong>条</span></li>
+                        </ul>
+                  </div>
+                  <div class="items fr sameArtical">
+                  	<h2>与<strong class="sblue">MIni</strong>相关的文章有：</h2>
+                        <ul>
+                        	<li><span class="date">(2013-11-11)</span><em>1</em><span class="anchor"><a href="#">冷冷的DOTA2：到哪都可以打折的英雄VIP</a></span><span>评论<strong>6</strong>条</span></li>
+                              <li><span class="date">(2013-11-11)</span><em>2</em><span class="anchor"><a href="#">NEST DOTA2项目决赛视频 LGD vs IG #2</a></span><span>评论<strong>3</strong>条</span></li>
+                              <li><span class="date">(2013-11-11)</span><em>3</em><span class="anchor"><a href="#">易乐游杯DOTA2-AMD完美电竞大赛一周赛事集锦</a></span><span>评论<strong>1</strong>条</span></li>
+                              <li><span class="date">(2013-11-11)</span><em>4</em><span class="anchor"><a href="#">NEST DOTA2项目决赛视频 LGD vs IG #1</a></span><span>评论<strong>8</strong>条</span></li>
+                              <li><span class="date">(2013-11-11)</span><em>5</em><span class="anchor"><a href="#">DOTA2视频：精彩路人爆头集锦第三十三期</a></span><span>评论<strong>0</strong>条</span></li>
+                              <li><span class="date">(2013-11-11)</span><em>6</em><span class="anchor"><a href="#">ACE联赛 常规赛第十四轮 RStars vs WPCA</a></span><span>评论<strong>0</strong>条</span></li>
+                              <li><span class="date">(2013-11-11)</span><em>7</em><span class="anchor"><a href="#">WPC-ACE联赛 常规赛第十四轮 IG vs HGT</a></span><span>评论<strong>0</strong>条</span></li>
+                              <li><span class="date">(2013-11-11)</span><em>8</em><span class="anchor"><a href="#">D2L邀请赛东部赛区iG 2:0拿下VG占据出线优势</a></span><span>评论<strong>0</strong>条</span></li>
+                              <li><span class="date">(2013-11-11)</span><em>9</em><span class="anchor"><a href="#">G联赛光棍节大战！A队、Fnatic领衔欧美赛区出战</a></span><span>评论<strong>0</strong>条</span></li>
+                              <li><span class="date">(2013-11-11)</span><em>10</em><span class="anchor"><a href="#">NEST全国电子竞技大赛 DOTA2冠军LGD专访</a></span><span>评论<strong>0</strong>条</span></li>
+                        </ul>
+                  </div>
+            </div>
+            <div class="guestBook clearFloat">
+            	<p style="padding-bottom:10px;">评论（<span class="red">0</span>人参与，<span class="red">0</span>条评价）</p>
+                  <div class="fl"><img src="images/article/icon.jpg" /></div>
+                  <div class="fr inputBox">
+                  	<textarea id="reviewInputBox" data-placeholder="您们都闪开，让我来说。"></textarea>
+                        <div style="border-top:1px solid #E6EAED;background-color:#FAFAFA;" class="clearFloat clearBoth">
+                        	<div class="fl faceIcon"></div>
+                              <div class="fr"><input type="image" src="images/article/bg01.gif" style="display:block" /></div>
+                        </div>
+                  </div>
+                  <div class="fr alink clearFloat">
+                  	<a href="#" class="weibo">微博登陆</a><a href="#" class="qq">QQ登陆</a><a href="#" class="sohu">搜狐</a><a href="#" class="guest">游客</a>
+                  </div>
+                  <div class="clearBoth"></div>
+                  <div style="background-color:#ECF8FF;padding:5px;text-align:center;color:#4799D0;font-size:12px;margin:10px 0px;">还没有评论，快来抢沙发吧！</div>
+                  <p style="text-align:right;font-size:12px;"><a href="#">17173正在使用畅言</a></p>
+            </div>
+        </div>
+	</div>
+	<div class="bottom">
+		<div class="footer white">
+			<div class="search-box-bottom">
+				<form>
+					<label for="serach-box">站内搜索</label>
+					<input type="text" name="serach" id="serach-box" style="margin:0px 5px 0px 5px;height:18px;line-height:18px;" data-placeholder="请输入关键字" />
+					<input type="image" src="images/default/search_btn.jpg" style="position:relative;bottom:-7px;" alt="serach"/>
+				</form>
+			</div>
+			<ul class="link-list clearFloat">
+				<li> <span><a href="#">DOTA2新闻</a></span>
+					<p><a href="#" title="DOTA2官网新闻">DOTA2官网新闻</a></p>
+					<p><a href="#" title="DOTA2赛事新闻">DOTA2赛事新闻</a></p>
+					<p><a href="#" title="DOTA2更新改动">DOTA2更新改动</a></p>
+					<p><a href="#" title="DOTA2公测时间">DOTA2公测时间</a></p>
+					<p><a href="#" title="DOTA2国服">DOTA2国服</a></p>
+					<p><a href="#" title="DOTA2战队">DOTA2战队</a></p>
+					<p><a href="#" title="DOTA2下载安装">DOTA2下载安装</a></p>
+					<p><a href="#" title="DOTA2国服饰品交易">DOTA2国服饰品交易</a></p>
+					<p><a href="#" title="完美DOTA2官网">完美DOTA2官网</a></p>
+				</li>
+				<li> <span><a href="#">DOTA2攻略</a></span>
+					<p><a href="#" title="DOTA2英雄出装">DOTA2英雄出装</a></p>
+					<p><a href="#" title="DOTA2英雄加点">DOTA2英雄加点</a></p>
+					<p><a href="#" title="DOTA2英雄击杀视频">DOTA2英雄击杀视频</a></p>
+					<p><a href="#" title="DOTA2新手教程">DOTA2新手教程</a></p>
+					<p><a href="#" title="DOTA2怎么加好友">DOTA2怎么加好友</a></p>
+					<p><a href="#" title="DOTA2怎么改名字">DOTA2怎么改名字</a></p>
+					<p><a href="#" title="DOTA2问题常识">DOTA2问题常识</a></p>
+					<p><a href="#" title="DOTA2战友招募">DOTA2战友招募</a></p>
+					<p><a href="#" title="DOTA2英雄攻略">DOTA2英雄攻略</a></p>
+				</li>
+				<li> <span><a href="#">DOTA2比赛</a></span>
+					<p><a href="#" title="DOTA2邀请赛">DOTA2邀请赛</a></p>
+					<p><a href="#" title="DOTA2比赛直播">DOTA2比赛直播</a></p>
+					<p><a href="#" title="DSL联赛DOTA2">DSL联赛DOTA2</a></p>
+					<p><a href="#" title="DOTA2超级联赛">DOTA2超级联赛</a></p>
+					<p><a href="#" title="WPC DOTA2联赛">WPC DOTA2联赛</a></p>
+					<p><a href="#" title="DOTA2比赛战队">DOTA2比赛战队</a></p>
+					<p><a href="#" title="DOTA2 G1联赛">DOTA2 G1联赛</a></p>
+					<p><a href="#" title="TI3国际邀请赛">TI3国际邀请赛</a></p>
+					<p><a href="#" title="DOTA2 ACE直播">DOTA2 ACE直播</a></p>
+				</li>
+				<li> <span><a href="#">DOTA2视频</a></span>
+					<p><a href="#" title="DOTA2比赛视频">DOTA2比赛视频</a></p>
+					<p><a href="#" title="DOTA2解说视频">DOTA2解说视频</a></p>
+					<p><a href="#" title="DOTA2蛋疼视频">DOTA2蛋疼视频</a></p>
+					<p><a href="#" title="DOTA2战队视频">DOTA2战队视频</a></p>
+					<p><a href="#" title="DOTA2搞笑视频">DOTA2搞笑视频</a></p>
+					<p><a href="#" title="海涛DOTA2视频">海涛DOTA2视频</a></p>
+					<p><a href="#" title="DOTA2教学视频">DOTA2教学视频</a></p>
+					<p><a href="#" title="DOTA2经典视频">DOTA2经典视频</a></p>
+					<p><a href="#" title="DOTA2第一视角">DOTA2第一视角</a></p>
+				</li>
+				<li style="border-right:none"> <span><a href="#">DOTA2图片</a></span>
+					<p><a href="#" title="DOTA2战队选手图集">DOTA2战队选手图集</a></p>
+					<p><a href="#" title="DOTA2 cosplay">DOTA2 cosplay</a></p>
+					<p><a href="#" title="DOTA2英雄原画">DOTA2英雄原画</a></p>
+					<p><a href="#" title="DOTA2高清屏保">DOTA2高清屏保</a></p>
+					<p><a href="#" title="DOTA2截图">DOTA2截图</a></p>
+					<p><a href="#" title="DOTA2美眉">DOTA2美眉</a></p>
+					<p><a href="#" title="DOTA2漫画">DOTA2漫画</a></p>
+					<p><a href="#" title="DOTA2同人">DOTA2同人</a></p>
+					<p><a href="#" title="DOTA2赛事图集">DOTA2赛事图集</a></p>
+				</li>
+			</ul>
+			<div class="copyright white"> <a href="#">关于17173</a> | <a href="#">人才招聘</a> | <a href="#">广告服务</a> | <a href="#">商务洽谈</a> | <a href="#">联系方式</a> | <a href="#">客服中心</a> | <a href="#">网站导航</a> | <a href="#">刀塔2地图</a>
+				<p>Copyright &#169; 2001-2013 17173. All rights reserved.</p>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>
